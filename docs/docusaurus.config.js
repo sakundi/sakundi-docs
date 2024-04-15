@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Blockchain Security Monitoring",
   tagline: "A P2P network security monitoring system for the Ethereum blockchain.",
-  url: "https://tikuna.io",
+  url: "https://docs.sakundi.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
