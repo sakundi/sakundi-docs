@@ -21,7 +21,7 @@ custom_edit_url: null
 
 To run this project, install it locally using:
 ```bash
-- $ git clone https://github.com/edenia/tikuna
+- $ git clone https://github.com/sakundi/tikuna
 - $ cd tikuna
 - $ docker build -t tikuna:latest .
 ```

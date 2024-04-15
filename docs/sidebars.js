@@ -8,7 +8,7 @@ const sidebars = {
     {
       type: "category",
       label: "About",
-      items: ["about/team", "about/sakundi", "about/edenia"],
+      items: ["about/team", "about/sakundi"],
     },
     {
       type: "category",

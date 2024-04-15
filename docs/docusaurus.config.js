@@ -140,32 +140,6 @@ const config = {
             ],
           },
           {
-            title: "Tikuna Community",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/edenia/tikuna",
-              },
-            ],
-          },
-          {
-            title: "Edenia Community",
-            items: [
-              {
-                label: "Discord",
-                href: "https://discord.com/invite/YeGcF6QwhP",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/EdeniaWeb3",
-              },
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/company/edeniaweb3/",
-              },
-            ],
-          },
-          {
             title: "Sakundi Community",
             items: [
               {
