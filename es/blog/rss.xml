@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Blockchain Security Monitoring Blog</title>
-        <link>https://tikuna.io/es/blog</link>
+        <link>https://docs.sakundi.io/es/blog</link>
         <description>Blockchain Security Monitoring Blog</description>
         <lastBuildDate>Tue, 18 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>es</language>
         <item>
             <title><![CDATA[The Danger of Malicious Block Proposers in Maximal Extractable Value]]></title>
-            <link>https://tikuna.io/es/blog/malicious-validators</link>
+            <link>https://docs.sakundi.io/es/blog/malicious-validators</link>
             <guid>malicious-validators</guid>
             <pubDate>Tue, 18 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[---]]></description>
@@ -18,7 +18,7 @@
         </item>
         <item>
             <title><![CDATA[Anunciando la Entrega de Nuestro Proyecto Tikuna en la Fase de Prueba de Concepto]]></title>
-            <link>https://tikuna.io/es/blog/tikuna-final-blogpost-fase1</link>
+            <link>https://docs.sakundi.io/es/blog/tikuna-final-blogpost-fase1</link>
             <guid>tikuna-final-blogpost-fase1</guid>
             <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[---]]></description>
@@ -28,7 +28,7 @@ Este es solo el comienzo de nuestro proyecto, ya que nuestro objetivo es desarro
         </item>
         <item>
             <title><![CDATA[Tikuna - Nuestra contribución a la seguridad en la blockchain]]></title>
-            <link>https://tikuna.io/es/blog/tikuna-contribution</link>
+            <link>https://docs.sakundi.io/es/blog/tikuna-contribution</link>
             <guid>tikuna-contribution</guid>
             <pubDate>Wed, 04 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[---]]></description>
@@ -36,7 +36,7 @@ Este es solo el comienzo de nuestro proyecto, ya que nuestro objetivo es desarro
         </item>
         <item>
             <title><![CDATA[Tikuna: Seguridad en Blockchain usando IA - Apoyado por Ethereum Foundation.]]></title>
-            <link>https://tikuna.io/es/blog/introducing-tikuna</link>
+            <link>https://docs.sakundi.io/es/blog/introducing-tikuna</link>
             <guid>introducing-tikuna</guid>
             <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[---]]></description>

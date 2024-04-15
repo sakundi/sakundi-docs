@@ -4,8 +4,8 @@
   <ShortName>Blockchain Security Monitoring</ShortName>
   <Description>Search Blockchain Security Monitoring</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://tikuna.io/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://tikuna.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://tikuna.io/opensearch.xml" />
-  <moz:SearchForm>https://tikuna.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://docs.sakundi.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://docs.sakundi.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.sakundi.io/opensearch.xml" />
+  <moz:SearchForm>https://docs.sakundi.io/</moz:SearchForm>
 </OpenSearchDescription>
