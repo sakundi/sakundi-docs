@@ -1,7 +1,0 @@
-data
-.project
-.pydevproject
-.settings/
-.env*
-venv*
-*_env
