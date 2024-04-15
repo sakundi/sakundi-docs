@@ -14,7 +14,7 @@ export default function BlogPostItemContent({children, className}) {
       <br></br>
       <Giscus
         id="comments"
-        repo="Edenia/tikuna"
+        repo="sakundi/sakundi-docs"
         repoId="R_kgDOHunUGg"
         category="General"
         categoryId="DIC_kwDOHunUGs4CQeU1"
