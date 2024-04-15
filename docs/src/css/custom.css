@@ -1,0 +1,567 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: rgb(0 0 0 / 74%);
+  --ifm-color-primary-dark: #051d38;
+  --ifm-color-primary-darker: #031528;
+  --ifm-color-primary-darkest: #001123;
+  --ifm-color-primary-light: #f49912;
+  --ifm-color-primary-lighter: #e5be57;
+  --ifm-color-primary-lightest: #f8d477;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-height: 5rem;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-footer-link-hover-color: #001123;
+  --ifm-pagination-nav-color-hover: #f49912;
+  --ifm-card-background: white;
+  --ifm-card-text-color: #001123;
+  --ifm-footer-title-color: #051d38 !important;
+  --navbar-background: #ffffff !important;
+  --footer-background-color: #ffffff !important;
+  --diagram-background-color: #ffffff !important;
+  --hero-background-color: linear-gradient(
+    4deg,
+    rgba(194, 211, 235, 1) 0%,
+    rgba(254, 254, 254, 1) 51%
+  );
+  --ifm-color-secondary: #051d38 !important;
+  --logo-sakundi: url("/img/sakundi-logo-light.png");
+  --logo-edenia: url("/img/edenia-logo.png");
+  --ifm-readme-click-analysis: url("/img/ReadmeClickAnalisys.png");
+  --ifm-readme-click-script: url("/img/ReadmeClickScript.png");
+  --ifm-readme-run-results: url("/img/ReadmeRunResults.png");
+  --ifm-readme-url-jupyter: url("/img/ReadmeUrlJupyter.png");
+  --ifm-blog-mev-gros-profit: url("/img/mev-gros-profit.jpeg");
+  --ifm-blog-mev: url("/img/mev.jpeg");
+  --ifm-blog-mev2: url("/img/mev2.png");
+  --ifm-readme-status-neighborhood: url("/img/readmeStatusNeigborhood.png");
+  --ifm-readme-status-network: url("/img/readmeNetworkStatus.png");
+  --ifm-background-main-page: url("/img/main-bg-light.webp") !important;
+  --ifm-background-hero: url("/img/diagram-light.webp") !important;
+  --ifm-background-hero-mobile: url("/img/diagram-mobile-light.png") !important;
+  --ifm-logo-hero: url("/img/tikuna-blue-logo.png") !important;
+  --ifm-logo: url("/img/tikuna-light-logo.png") !important;
+  --ifm-linkedin-icon: url("/img/icon-link-light.png");
+  --ifm-roadmap: url("/img/roadmap.webp") !important;
+  --ifm-dashboardEclipseAttacks: url("/img/dashboardEclipseAttacks.png") !important;
+  --ifm-dashboardBeacoNode: url("/img/dashboardBeacoNode.png") !important;
+  --ifm-dashboardp2pstatus: url("/img/dashboardp2pstatus.png") !important;
+  --ifm-menu-color-background-active: #e2e7f0;
+  --docsearch-modal-background: #e2e7f096 !important;
+  --docsearch-highlight-color: #051d38 !important;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: rgb(0 0 0 / 74%);
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: white;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #051d33 !important;
+  --ifm-menu-color-active: white;
+  --ifm-menu-color-background-active: #112949;
+  --ifm-toc-border-color: #2d3648 !important;
+  --ifm-link-color: white;
+  --ifm-card-background: #020e15;
+  --ifm-card-text-color: white;
+  --footer-background-color: #09294c !important;
+  --diagram-background-color: #060b14 !important;
+  --hero-background-color: linear-gradient(
+    0deg,
+    rgba(6, 11, 21, 1) 0%,
+    rgba(5, 37, 79, 1) 43%,
+    rgba(4, 45, 74, 1) 100%
+  );
+  --ifm-color-secondary: white !important;
+  --navbar-background: rgb(0 0 0 / 74%) !important;
+  --ifm-background-main-page: url("/img/main-bg.webp") !important;
+  --ifm-background-hero: url("/img/diagram-dark.webp") !important;
+  --ifm-background-hero-mobile: url("/img/diagram-mobile-dark.png") !important;
+  --ifm-logo-hero: url("/img/tikuna-white-logo.png") !important;
+  --ifm-logo: url("/img/tikuna-dark-logo.png") !important;
+  --ifm-roadmap: url("/img/roadmap-dark.webp") !important;
+  --ifm-training-blog: url("/img/trainingBlogImage.png") !important;
+  --logo-sakundi: url("/img/sakundi-logo.webp");
+  --logo-edenia: url("/img/edenia-light-logo.png");
+  --ifm-linkedin-icon: url("/img/icon-link.png");
+  --docsearch-modal-background: #060b1486 !important;
+  --docsearch-highlight-color: #ffffff !important;
+}
+
+.main-wrapper {
+  background-image: var(--ifm-background-main-page);
+  background-size: cover !important;
+}
+
+footer {
+  background-color: var(--footer-background-color) !important;
+  border-top: 2px solid #f49912;
+}
+
+.footer__title {
+  color: var(--ifm-color-secondary) !important;
+}
+
+.navbar {
+  border-bottom: 2px solid #f49912;
+  background-color: var(--navbar-background) !important;
+  padding: 0;
+}
+
+.navbar__logo {
+  height: 4rem;
+  margin-right: 0%;
+}
+
+.navbar__link:hover {
+  border-bottom: 2px solid #f49912;
+}
+
+.navbar__item {
+  display: inline-block;
+  padding: 6px 0;
+  margin: var(--ifm-navbar-item-padding-vertical)
+    var(--ifm-navbar-item-padding-horizontal);
+  color: var(--ifm-color-secondary) !important;
+}
+
+.navbar__items--right > .navbar__item {
+  margin: 0;
+}
+
+.dropdown > .navbar__link {
+  text-align: center;
+  padding: 4px 2px 6px 6px;
+  border: 1px solid var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary) !important;
+  border-radius: 6px;
+}
+
+.dropdown > .navbar__link:after {
+  border: none;
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: #f49912;
+}
+
+a.sidebarItemLink_mo7H:hover,
+a.sidebarItemLinkActive_I1ZP {
+  color: #f49912 !important;
+}
+
+.clean-btn {
+  border: 1px solid var(--ifm-color-secondary);
+  border-radius: 6px !important;
+  color: var(--ifm-color-secondary) !important;
+  margin-left: 10px;
+}
+
+hr {
+  background-color: #2d3648;
+}
+
+.footer__logo {
+  height: 7rem;
+  width: 100%;
+  margin-right: 4rem;
+  background-image: var(--ifm-logo);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after {
+  transform: rotateZ(0);
+}
+
+.menu__link--sublist-caret::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "\276F";
+  font-size: 20px;
+  color: #f49912;
+  filter: none;
+  margin-left: auto;
+  min-width: 1.25rem;
+  background: none;
+  transform: rotate(90deg);
+  height: 2.25rem;
+  width: 2.25rem;
+}
+
+.sakundiLogo {
+  background-image: var(--logo-sakundi);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 110px;
+  max-width: 400px;
+  margin-top: 2rem !important;
+  margin-right: 1rem;
+}
+
+.edeniaLogo {
+  background-image: var(--logo-edenia);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 110px;
+  max-width: 400px;
+  margin-top: 2rem !important;
+}
+
+.readmeClickAnalisys {
+  background-image: var(--ifm-readme-click-analysis);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 450px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.readmeClickScript {
+  background-image: var(--ifm-readme-click-script);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 350px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.readmeRunResults {
+  background-image: var(--ifm-readme-run-results);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 450px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.readmeUrlJupyter {
+  background-image: var(--ifm-readme-url-jupyter);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 150px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.readmeStatusNeighborhood {
+  background-image: var(--ifm-readme-status-neighborhood);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 600px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.readmeStatusNetwork {
+  background-image: var(--ifm-readme-status-network);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 600px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.blogMev {
+  background-image: var(--ifm-blog-mev);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+.blogMev2 {
+  background-image: var(--ifm-blog-mev2);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 600px;
+  max-width: 1000px;
+  margin-top: 2rem !important;
+}
+
+.blogGrosProfit {
+  background-image: var(--ifm-blog-mev-gros-profit);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 380px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+}
+
+
+.roadmapImage {
+  background-image: var(--ifm-roadmap);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 555px;
+  max-width: 1343px;
+  margin-top: 2rem !important;
+}
+
+.roadmapImageBlog {
+  background-image: var(--ifm-roadmap);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 270px;
+  max-width: 1343px;
+  margin-top: 2rem !important;
+}
+
+.trainingImageBlog {
+  background-image: var(--ifm-training-blog);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 300px;
+  max-width: 1343px;
+  margin-top: 2rem !important;
+}
+
+.dashboardp2pstatus {
+  background-image: var(--ifm-dashboardp2pstatus);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 350px;
+  max-width: 1343px;
+  margin-top: 2rem !important;
+}
+
+.dashboardBeacoNode {
+  background-image: var(--ifm-dashboardBeacoNode);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 320px;
+  max-width: 1343px;
+  margin-top: 2rem !important;
+}
+
+.dashboardEclipseAttacks {
+  background-image: var(--ifm-dashboardEclipseAttacks);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 160px;
+  max-width: 1343px;
+  margin-top: 2rem !important;
+}
+
+.buttonDashboard {
+  background-image: url(/img/ButtontoGrafana.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 70px;
+  max-width: 400px;
+  margin-top: 2rem !important;
+}
+
+.buttonSpanishDashboard {
+  background-image: url(/img/ButtontoGrafanaEspañol.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 80px;
+  max-width: 400px;
+  margin-top: 2rem !important;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 240px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border-right: 3px solid #f49912;
+  color: var(--ifm-card-text-color);
+  background-color: var(--ifm-card-background);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  min-width: max-content;
+  height: auto;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  background: linear-gradient(
+    36.1deg,
+    rgba(54, 243, 255, 0.88) 21.39%,
+    #3c8fff 82.14%
+  );
+}
+
+.cardImage {
+  height: auto;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 10px 20px;
+  min-height: min-content;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.DocSearch-Button {
+  margin: 0 10px !important;
+}
+
+.linkedin {
+  background-image: var(--ifm-linkedin-icon);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 32px;
+}
+
+body {
+  color: var(--ifm-color-primary-darkest);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  margin: 10px;
+}
+
+.button:hover {
+  color: white;
+}
+
+.sakundiWeb {
+  background-image: url(/img/icons/sakundi-web.png);
+}
+
+.sakundiTwitter {
+  background-image: url(/img/icons/sakundi-twitter.png);
+}
+
+.sakundiLinkedIn {
+  background-image: url(/img/icons/sakundi-linkedin.png);
+}
+
+.sakundiDiscord {
+  background-image: url(/img/icons/sakundi-discord.png);
+}
+
+.edeniaWeb {
+  background-image: url(/img/icons/edenia-web.png);
+}
+
+.edeniaTwitter {
+  background-image: url(/img/icons/edenia-twitter.png);
+}
+
+.edeniaLinkedIn {
+  background-image: url(/img/icons/edenia-linkedin.png);
+}
+
+.edeniaDiscord {
+  background-image: url(/img/icons/edenia-discord.png);
+}
+
+.socialMediaLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 996px) {
+  .footer__logo {
+    margin-right: 0;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .navbar__link {
+    display: none;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+  }
+
+  .cardHeader {
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 5%;
+  }
+
+  .cardWrapper {
+    height: auto;
+    flex-direction: column;
+    border-bottom: 3px solid #f49912;
+    border-right: none;
+  }
+
+  .navbar-sidebar {
+    border-bottom: 2px solid #f49912;
+    background-color: var(--ifm-card-background) !important;
+    padding: 0;
+  }
+
+  .navbar-sidebar__items {
+    --ifm-menu-color: var(--ifm-card-text-color) !important;
+  }
+
+  .navbar-sidebar__close {
+    border: none;
+  }
+
+  .menu__link--active {
+    --ifm-menu-color-active: var(--ifm-card-text-color) !important;
+  }
+
+  .navbar__toggle {
+    border: none;
+  }
+}
