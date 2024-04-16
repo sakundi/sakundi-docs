@@ -68,8 +68,8 @@ const config = {
       navbar: {
         logo: {
           alt: "Tikuna Logo",
-          src: "/img/tikuna-light-logo.png",
-          srcDark: "/img/tikuna-dark-logo.png"
+          src: "/img/sakundi-logo-light.png",
+          srcDark: "/img/sakundi-logo.png"
         },
         items: [
           {
@@ -166,19 +166,11 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Tikuna | Apache-2.0 Open Source License`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sakundi`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
-      algolia: {
-        appId: 'WBFSRMA4RP',
-        apiKey: '0cf32e65f305559bb8bd9cee5df12451',
-        indexName: 'tikuna',
-        contextualSearch: true,
-        searchParameters: {},
-        searchPagePath: 'search',
       },
     }),
 };

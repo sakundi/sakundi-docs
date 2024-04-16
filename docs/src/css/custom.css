@@ -7,20 +7,20 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: rgb(0 0 0 / 74%);
-  --ifm-color-primary-dark: #051d38;
+  --ifm-color-primary-dark: #09294C;
   --ifm-color-primary-darker: #031528;
   --ifm-color-primary-darkest: #001123;
-  --ifm-color-primary-light: #f49912;
-  --ifm-color-primary-lighter: #e5be57;
-  --ifm-color-primary-lightest: #f8d477;
+  --ifm-color-primary-light: #21E8AA;
+  --ifm-color-primary-lighter: #21E8AA;
+  --ifm-color-primary-lightest: #21E8AA;
   --ifm-code-font-size: 95%;
   --ifm-navbar-height: 5rem;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-footer-link-hover-color: #001123;
-  --ifm-pagination-nav-color-hover: #f49912;
+  --ifm-pagination-nav-color-hover: #21E8AA;
   --ifm-card-background: white;
   --ifm-card-text-color: #001123;
-  --ifm-footer-title-color: #051d38 !important;
+  --ifm-footer-title-color: #09294C !important;
   --navbar-background: #ffffff !important;
   --footer-background-color: #ffffff !important;
   --diagram-background-color: #ffffff !important;
@@ -29,7 +29,7 @@
     rgba(194, 211, 235, 1) 0%,
     rgba(254, 254, 254, 1) 51%
   );
-  --ifm-color-secondary: #051d38 !important;
+  --ifm-color-secondary: #09294C !important;
   --logo-sakundi: url("/img/sakundi-logo-light.png");
   --logo-edenia: url("/img/edenia-logo.png");
   --ifm-readme-click-analysis: url("/img/ReadmeClickAnalisys.png");
@@ -44,8 +44,8 @@
   --ifm-background-main-page: url("/img/main-bg-light.webp") !important;
   --ifm-background-hero: url("/img/diagram-light.webp") !important;
   --ifm-background-hero-mobile: url("/img/diagram-mobile-light.png") !important;
-  --ifm-logo-hero: url("/img/tikuna-blue-logo.png") !important;
-  --ifm-logo: url("/img/tikuna-light-logo.png") !important;
+  --ifm-logo-hero: url("/img/sakundi-logo-light.png") !important;
+  --ifm-logo: url("/img/sakundi-logo-light.png") !important;
   --ifm-linkedin-icon: url("/img/icon-link-light.png");
   --ifm-roadmap: url("/img/roadmap.webp") !important;
   --ifm-dashboardEclipseAttacks: url("/img/dashboardEclipseAttacks.png") !important;
@@ -53,7 +53,7 @@
   --ifm-dashboardp2pstatus: url("/img/dashboardp2pstatus.png") !important;
   --ifm-menu-color-background-active: #e2e7f0;
   --docsearch-modal-background: #e2e7f096 !important;
-  --docsearch-highlight-color: #051d38 !important;
+  --docsearch-highlight-color: #09294C !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -66,7 +66,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-background-color: #051d33 !important;
+  --ifm-background-color: #09294C !important;
   --ifm-menu-color-active: white;
   --ifm-menu-color-background-active: #112949;
   --ifm-toc-border-color: #2d3648 !important;
@@ -86,8 +86,8 @@
   --ifm-background-main-page: url("/img/main-bg.webp") !important;
   --ifm-background-hero: url("/img/diagram-dark.webp") !important;
   --ifm-background-hero-mobile: url("/img/diagram-mobile-dark.png") !important;
-  --ifm-logo-hero: url("/img/tikuna-white-logo.png") !important;
-  --ifm-logo: url("/img/tikuna-dark-logo.png") !important;
+  --ifm-logo-hero: url("/img/sakundi-logo.png") !important;
+  --ifm-logo: url("/img/sakundi-logo.png") !important;
   --ifm-roadmap: url("/img/roadmap-dark.webp") !important;
   --ifm-training-blog: url("/img/trainingBlogImage.png") !important;
   --logo-sakundi: url("/img/sakundi-logo.webp");
@@ -104,7 +104,7 @@
 
 footer {
   background-color: var(--footer-background-color) !important;
-  border-top: 2px solid #f49912;
+  border-top: 2px solid #21E8AA;
 }
 
 .footer__title {
@@ -112,18 +112,18 @@ footer {
 }
 
 .navbar {
-  border-bottom: 2px solid #f49912;
+  border-bottom: 2px solid #21E8AA;
   background-color: var(--navbar-background) !important;
   padding: 0;
 }
 
 .navbar__logo {
-  height: 4rem;
+  height: 2rem;
   margin-right: 0%;
 }
 
 .navbar__link:hover {
-  border-bottom: 2px solid #f49912;
+  border-bottom: 2px solid #21E8AA;
 }
 
 .navbar__item {
@@ -152,12 +152,12 @@ footer {
 
 .table-of-contents__link:hover,
 .table-of-contents__link--active {
-  color: #f49912;
+  color: #21E8AA;
 }
 
 a.sidebarItemLink_mo7H:hover,
 a.sidebarItemLinkActive_I1ZP {
-  color: #f49912 !important;
+  color: #21E8AA !important;
 }
 
 .clean-btn {
@@ -173,7 +173,7 @@ hr {
 
 .footer__logo {
   height: 7rem;
-  width: 100%;
+  width: 70%;
   margin-right: 4rem;
   background-image: var(--ifm-logo);
   background-position: center;
@@ -191,7 +191,7 @@ hr {
   justify-content: center;
   content: "\276F";
   font-size: 20px;
-  color: #f49912;
+  color: #21E8AA;
   filter: none;
   margin-left: auto;
   min-width: 1.25rem;
@@ -389,7 +389,7 @@ hr {
   height: 240px;
   margin: 20px 0;
   border-radius: 8px;
-  border-right: 3px solid #f49912;
+  border-right: 3px solid #21E8AA;
   color: var(--ifm-card-text-color);
   background-color: var(--ifm-card-background);
 }
@@ -539,12 +539,12 @@ body {
   .cardWrapper {
     height: auto;
     flex-direction: column;
-    border-bottom: 3px solid #f49912;
+    border-bottom: 3px solid #21E8AA;
     border-right: none;
   }
 
   .navbar-sidebar {
-    border-bottom: 2px solid #f49912;
+    border-bottom: 2px solid #21E8AA;
     background-color: var(--ifm-card-background) !important;
     padding: 0;
   }

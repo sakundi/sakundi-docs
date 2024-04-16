@@ -35,7 +35,7 @@ const HomepageHero = () => {
             Here is how it works:
           </Translate>
         </div>
-        <div className={styles.diagram}></div>
+        <div></div>
       </div>
     </header>
   );

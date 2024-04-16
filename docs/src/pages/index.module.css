@@ -7,7 +7,7 @@
   width: 100%;
   height: auto;
   background: var(--diagram-background-color);
-  border-bottom: 2px solid #f49912;
+  border-bottom: 2px solid #21E8AA;
 }
 
 .content {
@@ -15,7 +15,7 @@
   width: 100%;
   height: auto;
   background: var(--hero-background-color);
-  border-bottom: 8px solid #f49912;
+  border-bottom: 8px solid #21E8AA;
   border-radius: 0 0 50% 50%/0 0 20% 20%;
 }
 
@@ -68,14 +68,14 @@
   margin-top: 5rem;
   font-weight: 700;
   text-decoration: underline;
-  text-decoration-color: #f49912;
+  text-decoration-color: #21E8AA;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EAB82F;
+  background-color: #21E8AA;
   border-radius: 6px;
   margin: 2rem 1rem;
   padding: 10px 24px 12px;
