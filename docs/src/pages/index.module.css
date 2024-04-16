@@ -27,7 +27,7 @@
 }
 
 .image {
-  width: 400px;
+  width: 380px;
   height: auto;
   min-height: 150px;
   background-image: var(--ifm-logo-hero);
