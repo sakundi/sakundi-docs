@@ -1,9 +1,9 @@
 ---
 id: how-to-use-tikuna
-title: How to Use Tikuna
-sidebar_label: How to Use Tikuna
-description: Process install for Tikuna
-keywords: [tikuna, ethereum, research grant]
+title: How to Use Sakundi for Validator Nodes
+sidebar_label: How to Use Sakundi for Validator Nodes
+description: Registration Process
+keywords: [sakundi, validator nodes, blockchain, monitoring]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
