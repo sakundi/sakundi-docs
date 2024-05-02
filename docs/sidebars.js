@@ -10,7 +10,7 @@ const sidebars = {
       label: "Sakundi for Validator nodes",
       items: ["user-section/accessing-sakundi-dashboard",
               "user-section/registration-and-account-setup",
-              "user-section/managing-validator-nodes",
+//              "user-section/managing-validator-nodes",
               "user-section/understanding-metrics-and-analytics",
               "user-section/customization-and-configuration",
               "user-section/real-time-alerts-and-notifications",
