@@ -9,7 +9,7 @@ const FeatureList = [
     title: <Translate>Research</Translate>,
     Image: "img/first-card.webp",
     description: (
-      <Translate>Take a look at the main purposes behind the project</Translate>
+      <Translate>Take a look at our academic research</Translate>
     ),
     link: "/docs/research/intro",
   },
