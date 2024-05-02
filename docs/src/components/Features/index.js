@@ -14,14 +14,6 @@ const FeatureList = [
     link: "/docs/research/intro",
   },
   {
-    title: <Translate>About Tikuna</Translate>,
-    Image: "img/second-card.webp",
-    description: (
-      <Translate>Get to know about our team and involved companies</Translate>
-    ),
-    link: "/docs/about/team",
-  },
-  {
     title: <Translate>Blog</Translate>,
     Image: "img/third-card.webp",
     description: (

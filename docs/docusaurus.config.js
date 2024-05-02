@@ -115,20 +115,12 @@ const config = {
             title: "Docs",
             items: [
               {
+                label: "User section",
+                to: "docs/user-section/welcome-to-sakundi",
+              },
+              {
                 label: "Research",
                 to: "/docs/research/intro",
-              },
-              {
-                label: "About Tikuna",
-                to: "/docs/about/team",
-              },
-              {
-                label: "Monitoring",
-                to: "docs/monitoring/beacon-node",
-              },
-              {
-                label: "User section",
-                to: "docs/user-section/how-to-use-tikuna",
               },
             ],
           },

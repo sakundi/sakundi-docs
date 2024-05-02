@@ -16,7 +16,7 @@ const HomepageHero = () => {
           <div className={styles.image}></div>
           <h1 className={styles.subtitle}>
             <Translate>
-              An AI-based Blockchain security monitoring system.
+              Technical Documentation
             </Translate>
           </h1>
           <div className={styles.buttons}>
@@ -24,18 +24,10 @@ const HomepageHero = () => {
               className={clsx("button--lg", styles.buttonText)}
               to="/docs/user-section/welcome-to-sakundi"
             >
-              <Translate>Project Intro</Translate>
+              <Translate>Gets started!</Translate>
             </Link>
           </div>
         </div>
-      </div>
-      <div className={clsx("container", styles.diagramContainer )}>
-        <div className={styles.subtitleDiagram}>
-          <Translate>
-            Here is how it works:
-          </Translate>
-        </div>
-        <div></div>
       </div>
     </header>
   );
