@@ -8,8 +8,6 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
----
-
 ## Dear Valued User,
 
 Welcome to Sakundi for Validator Nodes, your trusted partner in enhancing the security and performance of validator nodes on the Ethereum blockchain. We are thrilled to have you join our community of empowered validators committed to safeguarding their digital assets and ensuring uninterrupted operations.
