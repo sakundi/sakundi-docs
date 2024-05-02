@@ -74,12 +74,6 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "about/team",
-            position: "left",
-            label: "About Sakundi",
-          },
-          {
-            type: "doc",
             docId: "user-section/welcome-to-sakundi",
             position: "left",
             label: "User Section",
@@ -89,6 +83,12 @@ const config = {
             docId: "research/intro",
             position: "left",
             label: "Research",
+          },
+          {
+            type: "doc",
+            docId: "about/team",
+            position: "left",
+            label: "About Sakundi",
           },
           {
             type: "localeDropdown",
