@@ -3,7 +3,7 @@ const sidebars = {
     {
       type: "category",
       label: "Welcome",
-      items: ["welcome-to-sakundi.md"],
+      items: ["user-section/welcome-to-sakundi"],
     },
     {
       type: "category",
