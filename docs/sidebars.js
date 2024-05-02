@@ -8,8 +8,8 @@ const sidebars = {
     {
       type: "category",
       label: "Sakundi for Validator nodes",
-      items: ["user-section/accessing-sakundi-dashboard",
-              "user-section/registration-and-account-setup",
+      items: ["user-section/registration-and-account-setup",
+              "user-section/accessing-sakundi-dashboard",
               "user-section/understanding-metrics-and-analytics",
               "user-section/customization-and-configuration",
               "user-section/real-time-alerts-and-notifications",
