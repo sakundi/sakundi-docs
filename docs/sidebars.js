@@ -5,7 +5,7 @@ const sidebars = {
       label: "Welcome",
       items: ["welcome-to-sakundi.md"],
     },
-
+    {
       type: "category",
       label: "Sakundi for Validator nodes",
       items: ["accessing-sakundi-dashboard.md",
