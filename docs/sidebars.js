@@ -1,7 +1,6 @@
 const sidebars = {
   tutorialSidebar: [
     {
-    {
       type: "category",
       label: "Welcome",
       items: ["welcome-to-sakundi.md"],
