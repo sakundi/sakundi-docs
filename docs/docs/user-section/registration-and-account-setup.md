@@ -8,8 +8,6 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
----
-
 ## Registering for an Account:
 * Navigate to the Sakundi for Validator Nodes registration page by accessing the following URL: `https://app.sakundi.io/login`.
 * Click on the "Install Metamask" button to initiate the process.

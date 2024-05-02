@@ -8,8 +8,6 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
----
-
 ## Navigation and Layout:
 The dashboard is designed with user-friendly navigation menus and an intuitive layout to facilitate easy access to key features and functionalities.
 

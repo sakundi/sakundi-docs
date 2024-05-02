@@ -10,7 +10,6 @@ const sidebars = {
       label: "Sakundi for Validator nodes",
       items: ["user-section/accessing-sakundi-dashboard",
               "user-section/registration-and-account-setup",
-//              "user-section/managing-validator-nodes",
               "user-section/understanding-metrics-and-analytics",
               "user-section/customization-and-configuration",
               "user-section/real-time-alerts-and-notifications",
@@ -18,7 +17,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Tikuna - our Open Source base",
+      label: "Tikuna - Our Open Source code base",
       items: ["user-section/how-to-use-tikuna",
               "user-section/understanding-dashboards",
               "monitoring/network-eth2",
@@ -28,7 +27,8 @@ const sidebars = {
     {
       type: "category",
       label: "Research",
-      items: ["research/intro",
+      items: ["research/sakundi-intro",
+              "research/intro",
               "research/stateoftheart",
               "research/references",
               "research/glossary"],

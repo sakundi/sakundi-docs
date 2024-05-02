@@ -1,5 +1,5 @@
 ---
-id: registration-and-account-setup
+id: managing-validator-nodes
 title: Managing Validator Nodes
 sidebar_label: Managing Validator Nodes
 description: Walk through the process of adding and managing validator nodes within Sakundi platform.
