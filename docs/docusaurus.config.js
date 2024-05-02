@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Blockchain Security Monitoring",
-  tagline: "A P2P network security monitoring system for the Ethereum blockchain.",
+  title: "Sakundi - Blockchain data analysis with AI",
+  tagline: "Blockchain data analysis with AI",
   url: "https://docs.sakundi.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -67,36 +67,29 @@ const config = {
       image: "img/dashboardp2pstatus.png",
       navbar: {
         logo: {
-          alt: "Tikuna Logo",
+          alt: "Sakundi Logo",
           src: "/img/sakundi-logo-light.png",
           srcDark: "/img/sakundi-logo.png"
         },
         items: [
           {
             type: "doc",
-            docId: "research/intro",
-            position: "left",
-            label: "Research",
-          },
-          {
-            type: "doc",
             docId: "about/team",
             position: "left",
-            label: "About Tikuna",
+            label: "About Sakundi",
           },
           {
             type: "doc",
-            docId: "user-section/how-to-use-tikuna",
+            docId: "user-section/welcome-to-sakundi",
             position: "left",
             label: "User Section",
           },
           {
             type: "doc",
-            docId: "monitoring/beacon-node",
+            docId: "research/intro",
             position: "left",
-            label: "Monitoring",
+            label: "Research",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             type: "localeDropdown",
             position: "right",

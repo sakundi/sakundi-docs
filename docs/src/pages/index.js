@@ -22,7 +22,7 @@ const HomepageHero = () => {
           <div className={styles.buttons}>
             <Link
               className={clsx("button--lg", styles.buttonText)}
-              to="/docs/research/intro"
+              to="/docs/user-section/welcome-to-sakundi"
             >
               <Translate>Project Intro</Translate>
             </Link>
