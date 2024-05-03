@@ -28,8 +28,7 @@ const sidebars = {
     {
       type: "category",
       label: "Research",
-      items: ["research/sakundi-intro",
-              "research/intro",
+      items: ["research/intro",
               "research/stateoftheart",
               "research/references",
               "research/glossary"],
