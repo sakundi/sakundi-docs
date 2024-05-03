@@ -4,7 +4,7 @@ const sidebars = {
       type: "category",
       label: "Welcome",
       items: ["user-section/welcome-to-sakundi",
-              "why-sakundi"],
+              "user-section/why-sakundi"],
     },
     {
       type: "category",
