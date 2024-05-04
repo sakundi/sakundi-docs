@@ -37,9 +37,9 @@ responsible for the same activities. The P2P network is one of the fundamental c
 of the blockchains that enable the creation and operation of cryptocurrencies [28].
 
 In the blockchain, the P2P network enables nodes to exchange data, for instance,
-transactions and blocks. In general, there is an economic incentive for partic-
-ipants to behave honestly. Given their public and distributed nature, blockchain com-
-ponents are especially exposed to attackers who can easily reach and interact with the
+transactions and blocks. In general, there is an economic incentive for participants
+to behave honestly. Given their public and distributed nature, blockchain components
+are especially exposed to attackers who can easily reach and interact with the
 different layers. Such adversaries may use a malicious node, tool, or software to take
 advantage of specific weaknesses in the P2P network layer and launch several attacks
 on the blockchain, like the ones described in [20, 26, 43]. The security of the entire
@@ -48,8 +48,8 @@ blockchain relies on the reliability of its P2P network.
 The Ethereum P2P protocol [36] was influenced by the kademlia Distributed Hash
 Table (DHT) design. Although kademlia possesses valuable properties, it has several
 limitations in terms of its security [4, 22]. There are several known attacks for such a
-protocol, including the eclipse attacks [20, 43], where it is possible to perform manip-
-ulations against the Ethereum P2P network participants, and deanonymization attacks,
+protocol, including the eclipse attacks [20, 43], where it is possible to perform manipulations
+against the Ethereum P2P network participants, and deanonymization attacks,
 as presented in [14]. Other types of vulnerabilities are also present (s. Section 3.2).
 Nevertheless, employing multiple detection and mitigation approaches [10, 11] can
 significantly reduce or eliminate the severity of these risks.
