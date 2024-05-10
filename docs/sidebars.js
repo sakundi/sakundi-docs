@@ -14,7 +14,8 @@ const sidebars = {
               "user-section/understanding-metrics-and-analytics",
               "user-section/customization-and-configuration",
               "user-section/real-time-alerts-and-notifications",
-              "user-section/support-and-resources"],
+              "user-section/support-and-resources",
+              "user-section/how-to-create-node"],
     },
     {
       type: "category",

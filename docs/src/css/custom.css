@@ -54,6 +54,26 @@
   --ifm-menu-color-background-active: #e2e7f0;
   --docsearch-modal-background: #e2e7f096 !important;
   --docsearch-highlight-color: #09294C !important;
+
+  /**
+Start: below are the Sakunid WebbApp schreenshots added by Loui
+**/
+
+--ifm-sakundi-profile-page: url("/img/sakundi-profile-page.png");
+--ifm-sakundi-for-validator-nodes-dashboard: url("/img/sakundi-for-validator-nodes-dashboard.png");
+--ifm-create-node-dialog: url("/img/create-node-dialog.png");
+--ifm-dashboard-successfully-created: url("/img/dashboard-successfully-created.png");
+--ifm-free-users-one-single-node-consider-upgrade: url("/img/free-users-one-single-node-consider-upgrade.png");
+--ifm-staking-status-dashboard: url("/img/staking-status-dashboard.png");
+--ifm-eclipse-attacks-dashboard: url("/img/eclipse-attacks-dashboard.png");
+--ifm-general-network-status-dashboard: url("/img/general-network-status-dashboard.png");
+--ifm-node-security-status-dashboard: url("/img/node-security-status-dashboard.png");
+--ifm-sakundi-metamask-install: url("/img/sakundi-metamask-install.png");
+
+/**
+End of Sakunid WebbApp schreenshots added by Loui
+**/
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -301,6 +321,133 @@ hr {
   margin-top: 2rem !important;
 }
 
+/**
+Start: below are the Sakunid WebbApp schreenshots added by Loui
+**/
+
+.sakundiProfilePage {
+  background-image: var(--ifm-sakundi-profile-page);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiForValidatorNodesDashboard {
+  background-image: var(--ifm-sakundi-for-validator-nodes-dashboard);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-bottom: -25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiCreateNodeDialog {
+  background-image: var(--ifm-create-node-dialog);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 500px;
+  max-width: 500px;
+  margin-top: 2rem !important;
+  margin-bottom: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiDashboardSuccessfullyCreated {
+  background-image: var(--ifm-dashboard-successfully-created);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-bottom: 30%;
+  margin-top: 2rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiFreeUsersOneSingleNodeConsiderUpgrade {
+  background-image: var(--ifm-free-users-one-single-node-consider-upgrade);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiStakingStatusDashboard {
+  background-image: var(--ifm-staking-status-dashboard);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-bottom: -52%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiEclipseAttacksDashboard{
+  background-image: var(--ifm-eclipse-attacks-dashboard);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-bottom: -32%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiGeneralNetworkStatusDashboard {
+  background-image: var(--ifm-general-network-status-dashboard);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-bottom: -30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiNodeSecurityStatusDashboard {
+  background-image: var(--ifm-node-security-status-dashboard);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-bottom: -53%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sakundiMetamaskInstall {
+  background-image: var(--ifm-sakundi-metamask-install);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 810px;
+  max-width: 800px;
+  margin-top: 2rem !important;
+  margin-bottom: -30%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 2rem !important; */
+}
+
+
+/**
+End of Sakunid WebbApp schreenshots added by Loui
+**/
 
 .roadmapImage {
   background-image: var(--ifm-roadmap);

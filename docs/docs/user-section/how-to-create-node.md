@@ -24,7 +24,8 @@ To begin monitoring your validator nodes in Sakundi, you need to create a node. 
 
 You will be presented with a dialog containing six fields that need to be filled out to create a new node. Here's a description of each field:
 
-<div className="create-node-dialog"></div>
+
+<div className="sakundiCreateNodeDialog CreateNodeDialog"></div>
 
 1) Node Type:
 Select the type of node from the dropdown list. You can choose between "Prysm" or "Lighthouse" depending on the type of validator node you are setting up.
@@ -48,4 +49,6 @@ Optionally, you can provide a brief description of your node. This can include a
 
 Once you have filled out all the required fields, review the information to ensure accuracy. Once satisfied, click on the  "Create" button to create your node in Sakundi.
 
-Following these 3 steps, you can easily create a new node in Sakundi and begin monitoring the performance and security for your validator nodes.
+Following these 3 steps, you can easily create a new node in Sakundi and begin monitoring the performance and security of your validator nodes.
+
+<div className="sakundiDashboardSuccessfullyCreated"></div>

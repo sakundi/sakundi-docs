@@ -24,6 +24,8 @@ After creating a node, it will be displayed in the "Home" section of your dashbo
 
 ## Staking Status Dashboard
 
+<div className="sakundiStakingStatusDashboard StakingStatusDashboard"></div>
+
 The "Staking Status" dashboard includes the following:
 
 1) Validator Status: Provides an overview of your validator's status, including its uptime, attestations, and proposed blocks.
@@ -36,6 +38,8 @@ The "Staking Status" dashboard includes the following:
 * The Sakundi_Node page offers a "Select Your Dashboard" dropdown list. This dropdown allows you to choose from multiple dashboards to view different sets of metrics and analytics. By default, the "Staking Status" dashboard is selected, but you can switch to one of the following dashboards for more detailed analysis:
 
 ## Eclipse Attacks Dashboard:
+
+<div className="sakundiEclipseAttacksDashboard EclipseAttacksDashboard"></div>
 
 The "Eclipse Attacks" dashboard in Sakundi provides advanced monitoring and detection capabilities to safeguard your validator node against potential eclipse attacks. Understanding and effectively utilizing this feature is crucial for maintaining the security and integrity of your validator node within the blockchain network. Here's a detailed overview:
 
@@ -59,6 +63,8 @@ By leveraging the advanced monitoring and detection capabilities of the "Eclipse
 
 
 ## General Network Status Dashboard:
+
+<div className="sakundiGeneralNetworkStatusDashboard GeneralNetworkStatusDashboard"></div>
 
 The "General Network Status" dashboard in Sakundi provides a comprehensive overview of key metrics and indicators related to the health and performance of the blockchain network. Understanding these metrics is essential for monitoring the network's stability and functionality. Here's a breakdown of the five metrics included in this dashboard:
 
@@ -99,6 +105,8 @@ Understanding these metrics within the "General Network Status" dashboard allows
 
 
 ## Node Security Status Dashboard:
+
+<div className="sakundiNodeSecurityStatusDashboard NodeSecurityStatusDashboard"></div>
 
 The "Node Security Status" dashboard in Sakundi provides valuable insights into the security posture of your validator node by monitoring key metrics related to libp2p peer connections and overall network security. Understanding and effectively utilizing this dashboard is essential for ensuring the security and integrity of your validator node within the blockchain network. Here's a detailed overview of the metrics displayed:
 

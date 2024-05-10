@@ -11,6 +11,9 @@ custom_edit_url: null
 ## Registering for an Account:
 * Navigate to the Sakundi for Validator Nodes registration page by accessing the following URL: `https://app.sakundi.io/login`.
 * Click on the "Install Metamask" button to initiate the process.
+
+<div className="sakundiMetamaskInstall installMetaMask"></div>
+
 * Install the MetaMask browser add-on by following the provided instructions.
 * Select the "Sign Up" button to start the registration procedure.
 * Click on the "Connect" button to establish a connection between your wallet and gain access to the platform.

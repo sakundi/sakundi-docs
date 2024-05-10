@@ -15,6 +15,9 @@ Upon logging in, users are greeted with an overview of their Validator Nodes' ho
 
 Key sections of the Sakundi dashboard include:
 
+<div className="sakundiForValidatorNodesDashboard SakundiWelcomePage"></div>
+
+
 ## General Section: 
 Home: Provides users with a personalized welcome message displaying their username, connected Ethereum account, and subsucription plan. Users can also view all created dashboards here. In the event no dashboards are present, a message indicating "Currently, there is nothing to monitor" is displayed, prompting users to create a node.
 
