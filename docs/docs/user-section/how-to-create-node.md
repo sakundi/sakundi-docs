@@ -40,7 +40,8 @@ to configure your node to be able to expose that endpoint:
 [Remote Monitoring](https://lighthouse-book.sigmaprime.io/advanced_metrics.html).
 
 4) Port:
-Enter the port number associated with your validator node. This information is necessary for establishing a connection with your node.
+Enter the port number associated with your node monitoring endpoint.
+This information is necessary for establishing a connection with your node.
 
 5) Validator ID:
 Input the validator ID associated with your node. This identifier helps Sakundi identify and track the performance of your validator.
