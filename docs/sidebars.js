@@ -11,11 +11,11 @@ const sidebars = {
       label: "Sakundi for Validator nodes",
       items: ["user-section/registration-and-account-setup",
               "user-section/accessing-sakundi-dashboard",
+              "user-section/how-to-create-node",
               "user-section/understanding-metrics-and-analytics",
               "user-section/customization-and-configuration",
               "user-section/real-time-alerts-and-notifications",
-              "user-section/support-and-resources",
-              "user-section/how-to-create-node"],
+              "user-section/support-and-resources"],
     },
     {
       type: "category",
