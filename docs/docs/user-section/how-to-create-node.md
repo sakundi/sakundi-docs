@@ -34,7 +34,10 @@ Select the type of node from the dropdown list. You can choose between "Prysm" o
 Enter a descriptive name for your node. This name will help you identify the node easily within Sakundi.
 
 3) IP or DNS:
-Provide the IP address or domain name of your validator node. This is the address Sakundi will use to connect to your node for monitoring purposes.
+Provide the IP address or domain name of the monitoring endpoint for your beacon or validator node.
+This is the service we use to extract data for analysis. Here you can find an example of how
+to configure your node to be able to expose that endpoint:
+[Remote Monitoring](https://lighthouse-book.sigmaprime.io/advanced_metrics.html).
 
 4) Port:
 Enter the port number associated with your validator node. This information is necessary for establishing a connection with your node.

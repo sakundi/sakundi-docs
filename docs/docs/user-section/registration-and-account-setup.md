@@ -9,7 +9,8 @@ custom_edit_url: null
 ---
 
 ## Registering for an Account:
-* Navigate to the Sakundi for Validator Nodes registration page by accessing the following URL: `https://app.sakundi.io/login`.
+* Navigate to the Sakundi for Validator Nodes registration page by accessing the following URL:
+  [https://app.sakundi.io](https://app.sakundi.io).
 * Click on the "Install Metamask" button to initiate the process.
 
 <div className="sakundiMetamaskInstall installMetaMask"></div>
@@ -22,7 +23,7 @@ custom_edit_url: null
 * Validate your account by clicking on the "Sign" button within the MetaMask dialogue box to access your account.
 
 ## Logging In to Your Account: 
-* Select your registered Eth account on the Sakundi login page `https://app.sakundi.io/login`.
+* Select your registered Eth account on the Sakundi login page [https://app.sakundi.io/login](https://app.sakundi.io/login).
 * Click on the "Sign In" button to access your account.
 * Validate your account by clicking on the "Sign" button within the MetaMask dialogue box to access your account.
 * If you encounter any issues logging in, contact Sakundi customer support for assistance.
