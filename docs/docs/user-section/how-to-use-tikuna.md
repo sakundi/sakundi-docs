@@ -1,7 +1,7 @@
 ---
 id: how-to-use-tikuna
-title: How to Use Sakundi for Validator Nodes
-sidebar_label: How to Use Sakundi for Validator Nodes
+title: How to Use Tikuna
+sidebar_label: How to Use Tikuna
 description: Registration Process
 keywords: [sakundi, validator nodes, blockchain, monitoring]
 hide_table_of_contents: true
