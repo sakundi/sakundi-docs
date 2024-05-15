@@ -50,9 +50,13 @@ Table (DHT) design. Although kademlia possesses valuable properties, it has seve
 limitations in terms of its security [4, 22]. There are several known attacks for such a
 protocol, including the eclipse attacks [20, 43], where it is possible to perform manipulations
 against the Ethereum P2P network participants, and deanonymization attacks,
-as presented in [14]. Other types of vulnerabilities are also present (s. Section 3.2).
-Nevertheless, employing multiple detection and mitigation approaches [10, 11] can
+as presented in [14]. Nevertheless, employing multiple detection and mitigation approaches [10, 11] can
 significantly reduce or eliminate the severity of these risks.
+
+We provide a monitoring solution for Ethereum nodes, focusing on cybersecurity issues.
+Users who utilize Sakundi for Nodes will receive insights and alerts related to the status of their
+clients. Anomalous incidents are detected so users can take action to avoid any service interruption.
+In the following sections, we explain how users can employ our tool.
 
 # References
 
