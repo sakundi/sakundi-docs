@@ -15,7 +15,12 @@ At Sakundi, we are committed to providing exceptional support and resources to e
 
 ## Dedicated Support Team: 
 
-Our knowledgeable support team is available to assist you with any questions, concerns, or technical issues you may encounter. Reach out to us via email at support@sakundi.io, and we'll respond promptly to provide the assistance you need.
+Our knowledgeable support team is available to assist you with any questions, concerns, or technical issues you may encounter. Reach out to us via our:
+
+* Telegram channel: https://t.me/Sakundi_io
+* WhatssApp channel: https://api.whatsapp.com/send/?phone=50689461891&text&type=phone_number&app_absent=0
+
+We'll respond promptly to provide the assistance you need.
 
 ## Comprehensive Documentation: 
 
