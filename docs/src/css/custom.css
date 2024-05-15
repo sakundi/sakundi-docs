@@ -366,10 +366,10 @@ Start: below are the Sakunid WebbApp schreenshots added by Loui
   background-size: contain;
   min-height: 810px;
   max-width: 800px;
-  margin-bottom: 30%;
   margin-top: 2rem !important;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10%;
 }
 
 .sakundiFreeUsersOneSingleNodeConsiderUpgrade {

@@ -24,7 +24,6 @@ To begin monitoring your validator nodes in Sakundi, you need to create a node. 
 
 You will be presented with a dialog containing six fields that need to be filled out to create a new node. Here's a description of each field:
 
-
 <div className="sakundiCreateNodeDialog CreateNodeDialog"></div>
 
 1) Node Type:
@@ -55,4 +54,4 @@ Once you have filled out all the required fields, review the information to ensu
 
 Following these 3 steps, you can easily create a new node in Sakundi and begin monitoring the performance and security of your validator nodes.
 
-<div className="sakundiDashboardSuccessfullyCreated"></div>
+<div className="sakundiDashboardSuccessfullyCreated SakundiDashboard"></div>
