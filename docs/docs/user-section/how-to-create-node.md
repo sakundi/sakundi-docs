@@ -17,7 +17,9 @@ To begin monitoring your validator nodes in Sakundi, you need to create a node. 
 ## Step 1: Accessing the Create Node Dialog
 
 1) Log in to your Sakundi account.
+
 2) Navigate to the dashboard and locate the "Monitor" section.
+
 3) Click on the "Create Node" option to initiate the node creation process.
 
 ## Step 2: Completing the Node Details
