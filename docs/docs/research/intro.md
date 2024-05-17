@@ -35,7 +35,3 @@ and improve the network visibility by providing insights about its current state
 and insights criteria can help us to measure the success of our approach by the number of identified incidents
 and the number of discovered insights. Therefore, our tool will play a major role in improving the overall
 Ethereum network security.
-
-## Project Roadmap
-
-<div className="roadmapImage"></div>
