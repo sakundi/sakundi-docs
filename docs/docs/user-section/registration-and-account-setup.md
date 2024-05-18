@@ -11,19 +11,22 @@ custom_edit_url: null
 ## Registering for an Account:
 * Navigate to the Sakundi for Validator Nodes registration page by accessing the following URL:
   [https://app.sakundi.io](https://app.sakundi.io).
-* Click on the "Install Metamask" button to initiate the process.
+* At the moment we only support Metamask as wallet providing indentity for our app. 
+  Please click on the "Install Metamask" button to initiate the process, if that is not yet installed
 
 <div className="sakundiMetamaskInstall installMetaMask"></div>
 
-* Install the MetaMask browser add-on by following the provided instructions.
+* Please install the MetaMask browser add-on by following the provided instructions.
 * Select the "Sign Up" button to start the registration procedure.
 * Click on the "Connect" button to establish a connection between your wallet and gain access to the platform.
-* Enter your first name, last name, email address, and select the Ethereum account that you wish to link to your profile.
+* Enter your first name, last name, email address, and select the Ethereum account that you wish to link to your
+  profile.
 * Proceed by selecting the "Sign Up" button.
 * Validate your account by clicking on the "Sign" button within the MetaMask dialogue box to access your account.
 
 ## Logging In to Your Account: 
-* Select your registered Eth account on the Sakundi login page [https://app.sakundi.io/login](https://app.sakundi.io/login).
+* Select your registered Eth account on the Sakundi login page
+  [https://app.sakundi.io/login](https://app.sakundi.io/login).
 * Click on the "Sign In" button to access your account.
 * Validate your account by clicking on the "Sign" button within the MetaMask dialogue box to access your account.
 * If you encounter any issues logging in, contact Sakundi customer support for assistance.
@@ -31,10 +34,11 @@ custom_edit_url: null
 ## Dashboard Access:
 * Once your account setup is complete, you will be granted access to the Sakundi dashboard.
 * Take a moment to familiarize yourself with the layout and navigation of the dashboard.
-* Explore the various features and functionalities available to manage your validator nodes and monitor their security and performance.
-
+* Explore the various features and functionalities available to manage your validator nodes and
+  monitor their security and performance.
 
 ## Next Steps:
 * Congratulations! You have now successfully registered and set up your account on Sakundi for Validator Nodes.
 * Consider adding your validator nodes to Sakundi to start monitoring their security and performance.
-* Explore the documentation and resources available to learn more about Sakundi's features and how to make the most of your experience.
+* Explore the documentation and resources available to learn more about Sakundi's features and how to make
+  the most of your experience.
