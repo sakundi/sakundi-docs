@@ -22,7 +22,7 @@ Key sections of the Sakundi dashboard include:
 Home: Provides users with a personalized welcome message displaying their username, connected Ethereum account, and subsucription plan. Users can also view all created dashboards here. In the event no dashboards are present, a message indicating "Currently, there is nothing to monitor" is displayed, prompting users to create a node.
 
 ## Monitor Section:
-* Node: Allows users to monitor their validator nodes' performance and security metrics.
+* Node: Allows users to monitor their validator node's performance and security metrics.
 
 * Create Node: Enables users to create new validator nodes directly from the dashboard.
 

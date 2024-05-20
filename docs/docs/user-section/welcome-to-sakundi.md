@@ -26,9 +26,7 @@ We utilize the power of artificial intelligence to safeguard your blockchain-bas
 At Sakundi, our mission is to provide cutting-edge security solutions for blockchain networks and decentralized applications (D-apps) through AI-driven technology. We are dedicated to proactively detecting and preventing incidents to ensure the integrity and resilience of your digital assets.
 
 ## About Sakundi:
-Sakundi is an organization that creates blockchain data analysis suites developed to address the growing need
-for real-time security monitoring. Our platform is supported by scientific research from CERN, ensuring the
-highest standards of reliability and accuracy.
+Sakundi is an organization that creates blockchain data analysis suites developed to address the growing need for real-time security monitoring. Our platform is supported by scientific research from CERN, ensuring the highest standards of reliability and accuracy.
 
 ## Key Features:
 

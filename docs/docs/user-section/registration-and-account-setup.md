@@ -19,8 +19,7 @@ custom_edit_url: null
 * Please install the MetaMask browser add-on by following the provided instructions.
 * Select the "Sign Up" button to start the registration procedure.
 * Click on the "Connect" button to establish a connection between your wallet and gain access to the platform.
-* Enter your first name, last name, email address, and select the Ethereum account that you wish to link to your
-  profile.
+* Enter your first name, last name, email address, and select the Ethereum account that you wish to link to your profile.
 * Proceed by selecting the "Sign Up" button.
 * Validate your account by clicking on the "Sign" button within the MetaMask dialogue box to access your account.
 
@@ -34,8 +33,7 @@ custom_edit_url: null
 ## Dashboard Access:
 * Once your account setup is complete, you will be granted access to the Sakundi dashboard.
 * Take a moment to familiarize yourself with the layout and navigation of the dashboard.
-* Explore the various features and functionalities available to manage your validator nodes and
-  monitor their security and performance.
+* Explore the various features and functionalities available to manage your validator nodes and monitor their security and performance.
 
 ## Next Steps:
 * Congratulations! You have now successfully registered and set up your account on Sakundi for Validator Nodes.
