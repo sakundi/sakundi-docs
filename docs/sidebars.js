@@ -21,10 +21,7 @@ const sidebars = {
       type: "category",
       label: "Tikuna - Our Open Source code base",
       items: ["user-section/how-to-use-tikuna",
-              "user-section/understanding-dashboards",
-              "monitoring/network-eth2",
-              "monitoring/beacon-node",
-              "monitoring/eclipse-attacks"],
+              "user-section/understanding-dashboards"],
     },
     {
       type: "category",
