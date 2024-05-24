@@ -7,6 +7,10 @@
     "message": "Comunidad",
     "description": "The title of the footer links column with title=Community in the footer"
   },
+  "link.title.Sakundi Community": {
+    "message": "Comunidad Sakundi",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
   "link.title.More": {
     "message": "Mas",
     "description": "The title of the footer links column with title=More in the footer"
