@@ -1,6 +1,6 @@
 ---
 id: welcome-to-sakundi
-title: Sakundi Welcoming message.
+title: Sakundi Welcoming Message.
 sidebar_label: Introducing Users to Sakundi for Validator Nodes
 description: Welcoming message, introducing users to Sakundi for Validator Nodes.
 keywords: [sakundi, validator nodes, blockchain, monitoring]

@@ -10,6 +10,8 @@ custom_edit_url: null
 
 # Why do I need Sakundi's solutions?
 
+<div className="sakundiSolutions"></div>
+
 Blockchain security is becoming increasingly relevant in today’s cyberspace as it extends
 its influence in many industries. Sakundi focuses on protecting the different layers of the 
 blockchain.
