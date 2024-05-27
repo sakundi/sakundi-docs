@@ -1,6 +1,6 @@
 ---
 id: welcome-to-sakundi
-title: Sakundi Welcoming Message.
+title: Welcome to Sakundi
 sidebar_label: Introducing Users to Sakundi for Validator Nodes
 description: Welcoming message, introducing users to Sakundi for Validator Nodes.
 keywords: [sakundi, validator nodes, blockchain, monitoring]
@@ -26,7 +26,7 @@ We utilize the power of artificial intelligence to safeguard your blockchain-bas
 At Sakundi, our mission is to provide cutting-edge security solutions for blockchain networks and decentralized applications (D-apps) through AI-driven technology. We are dedicated to proactively detecting and preventing incidents to ensure the integrity and resilience of your digital assets.
 
 ## About Sakundi:
-Sakundi is a blockchain data analysis suite developed to address the growing need for real-time security monitoring in blockchain ecosystems. Our platform is supported by scientific research from CERN, ensuring the highest standards of reliability and accuracy.
+Sakundi is an organization that creates blockchain data analysis suites developed to address the growing need for real-time security monitoring. Our platform is supported by scientific research from CERN, ensuring the highest standards of reliability and accuracy.
 
 ## Key Features:
 
@@ -36,6 +36,3 @@ Sakundi is a blockchain data analysis suite developed to address the growing nee
 
 * Software-as-a-Service (SaaS) Model: We offer all the benefits of a SaaS model, allowing you to streamline your security operations and access our platform with ease.
 
-## Thank You for Choosing Sakundi:
-
-Thank you for choosing Sakundi as your trusted partner in blockchain security. We are committed to empowering you with innovative security solutions that redefine the future of blockchain security.

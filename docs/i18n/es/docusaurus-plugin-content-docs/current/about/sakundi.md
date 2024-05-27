@@ -10,7 +10,7 @@ keywords: [sakundi, blockchain, cyber-security]
 
 <div className="sakundiLogo logo"></div>
 
-Sakundi es una organización de seguridad y privacidad de Blockchain basada en la investigación. Ofrece soluciones de monitoreo de seguridad para organizaciones Blockchain y aplicaciones distribuidas basadas en herramientas de Inteligencia Artificial.
+Sakundi es una organización de investigación en seguridad blockchain que aprovecha la inteligencia artificial y la automatización. Actualmente, estamos desarrollando nuestra primera solución para monitorear, detectar y visualizar incidentes de seguridad en redes blockchain, aplicaciones descentralizadas (D-apps) e infraestructura. Además, la misión de Sakundi es garantizar la seguridad y privacidad de las blockchains mediante el desarrollo de soluciones fácilmente desplegables basadas en investigación científica. Nuestro equipo está compuesto por especialistas de todo el mundo expertos en ciberseguridad, blockchain, ecosistemas fintech y DeFi.
 
 <div className="socialMediaLinks">
     <a href="http://sakundi.io/" className="button sakundiWeb"></a>

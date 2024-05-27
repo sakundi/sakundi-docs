@@ -1,66 +1,30 @@
 ---
 id: why-sakundi
-title: Why do I need Sakundi's solutions?
-sidebar_label: Why Sakundi 
+title: ¿Por qué necesitas las soluciones de Sakundi?
+sidebar_label: Por qué Sakundi?
 description: Introducing users to the need of Sakundi for Validator Nodes.
 keywords: [sakundi, validator nodes, blockchain, monitoring]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# Why do I need Sakundi's solutions?
+# ¿Por qué necesitas las soluciones de Sakundi?
 
-<div className="sakundiSolutions"></div>
+La seguridad de Blockchain está cada vez más relevante en el ciberespacio actual, ya que extiende su influencia a muchas industrias. Sakundi se enfoca en proteger las diferentes capas de la blockchain.
 
-Blockchain security is becoming increasingly relevant in today’s cyberspace as it extends
-its influence in many industries. Sakundi focuses on protecting the different layers of the 
-blockchain.
+Inicialmente nos enfocamos en la capa de red P2P, que permite a los nodos comunicarse y compartir información. La capa de red P2P puede ser vulnerable a varias familias de ataques, como ataques de denegación de servicio distribuido (DDoS), ataques de eclipse o ataques Sybil. Esta capa es propensa a amenazas heredadas de las redes P2P tradicionales, y debe ser analizada y comprendida mediante la recopilación de datos y la extracción de insights del comportamiento de la red para reducir esos riesgos. Los nodos validadores, beacons y de ejecución en Ethereum son los componentes de software más expuestos a estos riesgos, ya que interactúan constantemente con otros pares a través de Internet formando la red peer-to-peer.
 
-Initally we focus on the lowest level layer, the P2P network that allows the nodes to
-communicate and share information. The P2P network layer may be vulnerable to several
-families of attacks, such as Distributed Denial of Service (DDoS), eclipse attacks, 
-or Sybil attacks. This layer is prone to threats inherited from traditional P2P networks,
-and it must be analyzed and understood by collecting data and extracting insights from
-the network behavior to reduce those risks. Validator, beacons and execution nodes in
-Ethereum are the pieces of softwre most exposed to those risks. They constantly interact
-with other peers using Internet forming the peer-to-peer network.
+Aunque la tecnología blockchain puede ser altamente segura y descentralizada, aún presenta oportunidades de ataque. Por ejemplo, en las redes blockchain, hay casos, como los mencionados en [8, 20, 26, 27], en los que las DApps, los usuarios promedio o la propia red están expuestos a riesgos debido a vulnerabilidades particulares [4, 8, 20, 21, 24, 26, 40, 42, 43]. Por lo tanto, comprender los riesgos asociados con las redes blockchain y desarrollar soluciones centradas en la seguridad de manera efectiva es esencial para cualquier blockchain.
 
-Even though blockchain technology can be highly secure and decentralized, it still offers
-attack opportunities. For example, in blockchain networks, there are cases, such as the
-ones mentioned in [8, 20, 26, 27], in which the dApps, average users, or the network itself
-are exposed to risks due to particular vulnerabilities [4, 8, 20, 21, 24, 26, 40, 42, 43].
-Therefore, understanding the risks associated with blockchain networks and effectively
-developing security-focused solutions is essential to any blockchain. 
+Las redes peer-to-peer (P2P) son redes descentralizadas que incluyen muchos nodos que almacenan y distribuyen datos de manera colectiva, y cada nodo funciona como un par individual. La comunicación se realiza sin una autoridad central; por lo tanto, todos los nodos tienen el mismo poder y son responsables de las mismas actividades. La red P2P es uno de los componentes fundamentales de las blockchains que permiten la creación y operación de criptomonedas [28].
 
-Peer-to-peer (P2P) networks are decentralized networks that include many nodes storing and distributing data
-collectively, and each node operates as an individual peer. The communication is carried
-out without a central authority; hence, all nodes obtain the same amount of power and are
-responsible for the same activities. The P2P network is one of the fundamental components
-of the blockchains that enable the creation and operation of cryptocurrencies [28].
+En la blockchain, la red P2P permite a los nodos intercambiar datos, como transacciones y bloques. En general, hay un incentivo económico para que los participantes se comporten de manera honesta. Dada su naturaleza pública y distribuida, los componentes de blockchain están especialmente expuestos a atacantes que pueden alcanzar fácilmente y interactuar con las diferentes capas. Dichos adversarios pueden utilizar un nodo malicioso, herramienta o software para aprovechar debilidades específicas en la capa de red P2P y lanzar varios ataques a la blockchain, como los descritos en [20, 26, 43]. La seguridad de toda la blockchain depende de la confiabilidad de su red P2P.
 
-In the blockchain, the P2P network enables nodes to exchange data, for instance,
-transactions and blocks. In general, there is an economic incentive for participants
-to behave honestly. Given their public and distributed nature, blockchain components
-are especially exposed to attackers who can easily reach and interact with the
-different layers. Such adversaries may use a malicious node, tool, or software to take
-advantage of specific weaknesses in the P2P network layer and launch several attacks
-on the blockchain, like the ones described in [20, 26, 43]. The security of the entire
-blockchain relies on the reliability of its P2P network.
+El protocolo P2P de Ethereum [36] fue influenciado por el diseño de la Tabla Hash Distribuida (DHT) de kademlia. Aunque kademlia posee propiedades valiosas, tiene varias limitaciones en términos de seguridad [4, 22]. Hay varios ataques conocidos para dicho protocolo, incluidos los ataques de eclipse [20, 43], donde es posible realizar manipulaciones contra los participantes de la red P2P de Ethereum, y ataques de desanonimización, como se presenta en [14]. Sin embargo, el uso de múltiples enfoques de detección y mitigación [10, 11] puede reducir significativamente o eliminar la gravedad de estos riesgos.
 
-The Ethereum P2P protocol [36] was influenced by the kademlia Distributed Hash
-Table (DHT) design. Although kademlia possesses valuable properties, it has several
-limitations in terms of its security [4, 22]. There are several known attacks for such a
-protocol, including the eclipse attacks [20, 43], where it is possible to perform manipulations
-against the Ethereum P2P network participants, and deanonymization attacks,
-as presented in [14]. Nevertheless, employing multiple detection and mitigation approaches [10, 11] can
-significantly reduce or eliminate the severity of these risks.
+Ofrecemos una solución de monitoreo para nodos Ethereum, enfocada en problemas de ciberseguridad. Los usuarios que utilizan Sakundi para Nodos recibirán insights y alertas relacionadas con el estado de sus clientes. Se detectan incidentes anómalos para que los usuarios puedan tomar medidas para evitar cualquier interrupción del servicio. En las siguientes secciones, explicamos cómo los usuarios pueden emplear nuestra herramienta.
 
-We provide a monitoring solution for Ethereum nodes, focusing on cybersecurity issues.
-Users who utilize Sakundi for Nodes will receive insights and alerts related to the status of their
-clients. Anomalous incidents are detected so users can take action to avoid any service interruption.
-In the following sections, we explain how users can employ our tool.
-
-# References
+# Referencias
 
 1. Bengio, Y., Ducharme, R., Vincent, P., Jauvin, C.: A neural probabilistic language model. J.
 Mach. Learn. Res. 3, 1137–1155. ACM (2003)

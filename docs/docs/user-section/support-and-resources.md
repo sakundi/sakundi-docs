@@ -29,6 +29,10 @@ Access our extensive documentation library, where you'll find detailed guides, t
 ## Video Tutorial: 
 Explore our video tutorial, designed to walk you through various aspects of Sakundi, from account setup to advanced analytics. This tutorial offers visual demonstrations to help you get the most out of Sakundi's capabilities.
 
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2sVjoDAEICI?si=SjbV1FRfCkEjAa_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Continuous Updates: 
 Stay informed about the latest features, enhancements, and updates to Sakundi through our release notes and announcements. We're committed to continuously improving our platform to meet the evolving needs of our users and the blockchain community.
 

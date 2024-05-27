@@ -17,7 +17,9 @@ To begin monitoring your validator nodes in Sakundi, you need to create a node. 
 ## Step 1: Accessing the Create Node Dialog
 
 1) Log in to your Sakundi account.
+
 2) Navigate to the dashboard and locate the "Monitor" section.
+
 3) Click on the "Create Node" option to initiate the node creation process.
 
 ## Step 2: Completing the Node Details
@@ -27,15 +29,14 @@ You will be presented with a dialog containing six fields that need to be filled
 <div className="sakundiCreateNodeDialog CreateNodeDialog"></div>
 
 1) Node Type:
-Select the type of node from the dropdown list. You can choose between "Prysm" or "Lighthouse" depending on the type of validator node you are setting up.
+Select the type of node from the dropdown list. You can choose between "Prysm" or "Lighthouse" depending on the type of validator node you are setting up. At the time being we only support such clients.
 
 2) Node Name:
 Enter a descriptive name for your node. This name will help you identify the node easily within Sakundi.
 
 3) IP or DNS:
 Provide the IP address or domain name of the monitoring endpoint for your beacon or validator node.
-This is the service we use to extract data for analysis. Here you can find an example of how
-to configure your node to be able to expose that endpoint:
+This is the service we use to extract data for analysis. Here you can find an example of how to configure your node to be able to expose that endpoint:
 [Remote Monitoring](https://lighthouse-book.sigmaprime.io/advanced_metrics.html).
 
 4) Port:
@@ -43,7 +44,7 @@ Enter the port number associated with your node monitoring endpoint.
 This information is necessary for establishing a connection with your node.
 
 5) Validator ID:
-Input the validator ID associated with your node. This identifier helps Sakundi identify and track the performance of your validator.
+Input the validator ID associated with your node. This identifier helps Sakundi identify and track the performance of your validator. That is the number you receive for you validator when you register it in the Ethereum blockchain.
 
 6) Node Description:
 Optionally, you can provide a brief description of your node. This can include any additional information or notes you want to associate with the node.

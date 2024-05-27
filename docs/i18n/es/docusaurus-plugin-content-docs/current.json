@@ -18,5 +18,17 @@
   "sidebar.tutorialSidebar.category.User Section": {
     "message": "Sección de usuario",
     "description": "The label for category user section in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Welcome": {
+    "message": "Bienvenida",
+    "description": "The label for category user section in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tikuna - Our Open Source code base": {
+    "message": "Tikuna - Nuestro código Open Source",
+    "description": "The label for category user section in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Sakundi for Validator nodes": {
+    "message": "Sakundi para nodos validadores",
+    "description": "The label for category user section in sidebar tutorialSidebar"
   }
 }
