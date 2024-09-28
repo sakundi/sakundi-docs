@@ -15,6 +15,10 @@
     "message": "Sección de usuario",
     "description": "The label of footer link with label=About Tikuna linking to /docs/about/team"
   },
+  "item.label.About Sakundi": {
+    "message": "Acerca de Sakundi",
+    "description": "The label of footer link with label=About Tikuna linking to /docs/about/team"
+  },
   "item.label.Blog": {
     "message": "Blog",
     "description": "Navbar item with label Blog"
