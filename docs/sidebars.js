@@ -8,12 +8,6 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Tikuna - Our Open Source code base",
-      items: ["user-section/how-to-use-tikuna",
-              "user-section/understanding-dashboards"],
-    },
-    {
-      type: "category",
       label: "Research",
       items: ["research/intro",
               "research/stateoftheart",
