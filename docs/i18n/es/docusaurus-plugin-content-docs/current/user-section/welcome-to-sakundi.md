@@ -1,7 +1,7 @@
 ---
 id: welcome-to-sakundi
 title: Bienvenidos a Sakundi
-sidebar_label: Sakundi: Su aliado en la privacidad de sus usuarios
+sidebar_label: Sakundi - Su aliado en la privacidad de sus usuarios
 description: Welcoming message, introducing users to Sakundi for Validator Nodes.
 keywords: [sakundi, validator nodes, blockchain, monitoring]
 hide_table_of_contents: true
