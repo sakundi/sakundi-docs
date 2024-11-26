@@ -10,11 +10,8 @@ custom_edit_url: null
 
 ## Introducción:
 
-Sakundi es una organización de investigación en seguridad blockchain. La misión de Sakundi es garantizar la seguridad y privacidad de los usuarios de tecnología blockchain y fintech mediante el desarrollo de soluciones intuitivas basadas en investigación científica. Nuestro equipo está compuesto por expertos en ciberseguridad, blockchain, ecosistemas fintech y DeFi.
+Sakundi es una organización que desarrolla investigación en seguridad y privacidad. La misión de Sakundi es garantizar la seguridad y privacidad de los usuarios de tecnología mediante el desarrollo de soluciones intuitivas basadas en investigación científica. Nuestro equipo está compuesto por expertos en ciberseguridad, AI, blockchain, ecosistemas fintech y DeFi.
 
 ## Nuestra Misión:
-En Sakundi, nuestra misión es proporcionar soluciones de seguridad de vanguardia para redes blockchain y aplicaciones descentralizadas (D-apps) mediante tecnología de protección de la privacidad. Estamos dedicados a proporcionar soluciones de seguridad y resiliencia de tus activos digitales y datos personales.
-
-## Acerca de Sakundi:
-Sakundi es una organización que crea suites de protección de datos de usuarios para blockchain desarrolladas para abordar la creciente necesidad de proyteger la intimidad de los usuarios. Nuestra plataforma está respaldada por investigaciones científicas en el CERN, asegurando los más altos estándares de confiabilidad.
+En Sakundi, nuestra misión es proporcionar soluciones de seguridad de vanguardia mediante tecnologías de protección de la privacidad. Estamos dedicados a proporcionar soluciones de seguridad y resiliencia de tus activos digitales y datos personales.
 

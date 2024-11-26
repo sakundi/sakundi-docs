@@ -10,7 +10,7 @@ keywords: [sakundi, blockchain, cyber-security]
 
 <div className="sakundiLogo logo"></div>
 
-Sakundi es una organización de investigación en seguridad blockchain. La misión de Sakundi es garantizar la seguridad y privacidad de los usuarios de tecnología blockchain mediante el desarrollo de soluciones intuitivas basadas en investigación científica. Nuestro equipo está compuesto por expertos en ciberseguridad, blockchain, ecosistemas fintech y DeFi.
+Sakundi es una organización de investigación en seguridad y privacidad. La misión de Sakundi es garantizar la seguridad y privacidad de los usuarios de tecnología mediante el desarrollo de soluciones intuitivas basadas en investigación científica. Nuestro equipo está compuesto por expertos en ciberseguridad, blockchain, ecosistemas fintech y DeFi.
 
 <div className="socialMediaLinks">
     <a href="http://sakundi.io/" className="button sakundiWeb"></a>
