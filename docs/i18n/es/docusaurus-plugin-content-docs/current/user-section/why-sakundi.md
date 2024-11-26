@@ -1,9 +1,9 @@
 ---
 id: why-sakundi
 title: ¿Por qué necesitas las soluciones de Sakundi?
-sidebar_label: ¿Por qué Sakundi?
+sidebar_label: "¿Por qué Sakundi?"
 description: Introducing users to the need of Sakundi for Validator Nodes.
-keywords: [sakundi, validator nodes, blockchain, monitoring]
+keywords: [sakundi, blockchain]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
