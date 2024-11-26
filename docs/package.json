@@ -25,7 +25,8 @@
     "react-player": "^2.16.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.2.0"
+    "@docusaurus/module-type-aliases": "2.2.0",
+    "yarn-audit-fix": "^10.1.0"
   },
   "browserslist": {
     "production": [
