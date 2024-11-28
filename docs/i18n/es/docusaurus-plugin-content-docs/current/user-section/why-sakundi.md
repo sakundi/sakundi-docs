@@ -18,4 +18,4 @@ El proyecto tiene como objetivo desarrollar una solución de infraestructura bas
 
 Sakundi se enfoca en proteger a los usuarios en las diferentes capas de la blockchain y también en tecnologias Web tradicionales. Además, nuestras soluciones son de Código Abierto (Open Source) por lo que puedes revisar de forma transparente cómo funcionan nuestras aplicaciones sin necesidad de confiar en
 nosotros ciegamente. Acá se pueden encontrar nuestros repositorios:
-[Sakundi ](https://github.com/sakundi)
+[Sakundi Github](https://github.com/sakundi)
