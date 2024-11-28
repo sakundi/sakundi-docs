@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.sakundi.io/es/blog</id>
-    <title>Sakundi - Blockchain data analysis with AI Blog</title>
+    <title>Sakundi - Security and Privacy for the 4th Industrial Revolution Blog</title>
     <updated>2023-07-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.sakundi.io/es/blog"/>
-    <subtitle>Sakundi - Blockchain data analysis with AI Blog</subtitle>
+    <subtitle>Sakundi - Security and Privacy for the 4th Industrial Revolution Blog</subtitle>
     <icon>https://docs.sakundi.io/es/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[The Danger of Malicious Block Proposers in Maximal Extractable Value]]></title>
