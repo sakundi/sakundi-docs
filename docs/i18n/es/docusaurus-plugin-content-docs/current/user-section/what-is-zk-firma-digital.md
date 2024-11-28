@@ -8,7 +8,7 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-ZK Firma Digital es un protocolo de conocimiento cero que permite a los titulares de una tarjeta de identidad digital firmada por el gobierno probar su identidad de una manera que preserva la privacidad. Proporciona herramientas para generar y verificar pruebas, autenticar usuarios y realizar verificaciones utilizando tecnologías Web2 o Web3. El servicio se ofrece inicialmente para Costa Rica.
+ZK Firma Digital es un protocolo de conocimiento cero que permite a los titulares de una tarjeta de identidad digital firmada por el gobierno probar su identidad de una manera que preserva la privacidad. La solución proporciona herramientas para generar y verificar pruebas, autenticar usuarios y realizar verificaciones utilizando tecnologías Web2 o Web3. El servicio se ofrece inicialmente para Costa Rica.
 
 El proyecto tiene como objetivo desarrollar una solución de infraestructura basada en pruebas de conocimiento cero para mejorar el sistema de identidad digital. Nos esforzamos por fortalecer la privacidad de los ciudadanos minimizando la recolección de datos, permitiendo que las personas accedan a una amplia gama de servicios valiosos sin divulgar información sensible.
 
@@ -25,4 +25,22 @@ Hemos utilizado una de las innovaciones más significativas en criptografía de 
 Por ejemplo, un usuario puede demostrar que conoce una clave privada sin enviarla a través de Internet. Otro ejemplo es que puede demostrar que posee una clave secreta que pertenece a un par de claves públicas y privadas sin compartir la clave secreta.
 
 Las ZKP permiten al usuario crear una prueba matemática de que posee cierta información que puede ser validada por un tercero, llamado el verificador. En nuestro caso de uso, extraemos el certificado digital de la tarjeta de identidad localmente en el dispositivo del usuario y creamos una prueba anónima de dicho certificado. De esta manera, el usuario puede demostrar que tiene una identidad validada (firmada) por el gobierno sin enviar realmente el certificado ni la información sensible contenida en él. Por otro lado, dependiendo del caso de uso, el proveedor de servicios puede solicitar al usuario revelar información específica del certificado, algo que el usuario tiene que aceptar y confirmar.
+
+Esta solución permitirá a los ciudadanos verificar su identidad y proporcionar información específica sin revelar detalles personales. Al minimizar la distribución de datos sensibles entre diversas instituciones y empresas, podemos reducir significativamente el riesgo de robo de datos. Además, este sistema puede autenticar a los usuarios para diversos servicios, asegurando que sean personas reales y no bots, sin requerir información sensible como direcciones de correo electrónico o números de teléfono.
+
+# Casos de uso potenciales
+
+Este tipo de tecnologías tienen muchos potenciles casos de uso donde podemos ayudar a mejorar la privacidad de los usuarios, como por ejemplo:
+
+* Anonymous authentication
+* Descentralized anonymous voting
+* Anonymous proof of humanity
+* Health data privacy
+* Know Your Customer
+* Privacy-Preserving Verification
+* Anti-Sybil Mechanisms
+* DAO Governance
+* Quadratic Funding (QF)
+* Wallet Recovery
+* Y muchos más
 
