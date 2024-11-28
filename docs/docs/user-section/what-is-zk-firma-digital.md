@@ -8,8 +8,6 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# What is ZK Firma Digital?
-
 ZK Firma Digital is a zero-knowledge protocol that allows holders of a
 government-signed digital identity card to prove their identity in a
 privacy preserving way. It provides tools to generate and verify proofs,
