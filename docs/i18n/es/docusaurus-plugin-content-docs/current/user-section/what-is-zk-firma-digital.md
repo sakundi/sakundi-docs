@@ -22,7 +22,7 @@ A veces, los proveedores de servicios necesitan identificar a sus usuarios como 
 
 Hemos utilizado una de las innovaciones más significativas en criptografía de los últimos años, llamada pruebas de conocimiento cero (ZKP, por sus siglas en inglés). Este tipo de criptografía permite que el usuario demuestre que posee cierta información sin revelar realmente los datos.
 
-Por ejemplo, un usuario puede demostrar que conoce una clave privada sin enviarla a través de Internet. Otro ejemplo es que puede demostrar que posee una clave secreta que pertenece a un par de claves públicas y privadas sin compartir la clave secreta.
+Por ejemplo, un usuario puede demostrar que posee una contraseña de un sitio web sin enviarla a través de Internet. Otro ejemplo es que se puede demostrar que posee una clave secreta que pertenece a un par de claves públicas y privadas sin compartir la clave secreta.
 
 Las ZKP permiten al usuario crear una prueba matemática de que posee cierta información que puede ser validada por un tercero, llamado el verificador. En nuestro caso de uso, extraemos el certificado digital de la tarjeta de identidad localmente en el dispositivo del usuario y creamos una prueba anónima de dicho certificado. De esta manera, el usuario puede demostrar que tiene una identidad validada (firmada) por el gobierno sin enviar realmente el certificado ni la información sensible contenida en él. Por otro lado, dependiendo del caso de uso, el proveedor de servicios puede solicitar al usuario revelar información específica del certificado, algo que el usuario tiene que aceptar o rechazar.
 
