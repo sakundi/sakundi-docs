@@ -1,5 +1,5 @@
 ---
-id: why-sakundi
+id: what-is-zk-firma-digital
 title: What is ZK Firma Digital?
 sidebar_label: What is ZK Firma Digital?
 description: Sakundi - Your partner on user privacy protection

@@ -8,6 +8,11 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "ZK Firma Digital",
+      items: ["user-section/what-is-zk-firma-digital"],
+    },
+    {
+      type: "category",
       label: "Research",
       items: ["research/intro",
               "research/stateoftheart",
