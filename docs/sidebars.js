@@ -9,7 +9,9 @@ const sidebars = {
     {
       type: "category",
       label: "ZK Firma Digital",
-      items: ["user-section/what-is-zk-firma-digital"],
+      items: ["user-section/what-is-zk-firma-digital",
+              "user-section/client-installation"
+      ],
     },
     {
       type: "category",
