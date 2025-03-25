@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Sakundi - Security and Privacy for the 4th Industrial Revolution",
-  tagline: "Security and Privacy for the 4th Industrial Revolution",
+  title: "Sakundi - Security and Privacy for the Blockchain age",
+  tagline: "Security and Privacy for the Blockchain age",
   url: "https://docs.sakundi.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
