@@ -10,62 +10,78 @@ custom_edit_url: null
 
 ## Installation
 
-**On Windows:**
+### Windows
 
-Please follow these steps:
+1. Download the installer:
+[Windows Installer](https://app.sakundi.io:9090/zk-firma-digital-0.6.3.exe)
 
-* Download the installer by clicking the following link:
+2. Verify the sha256 hash:
+    ```bash
+    certutil -hashfile "C:\file\path\zk-firma-digital-0.6.3.exe" SHA256
+    ```
+    The result should match:
+    ```bash
+    c116a271668e9e430116cd335f7bb4128d1af4d387ad7593330850932281cf07  zk-firma-digital-0.6.3.exe
+    ```
+3. Run the installer if the hash matches.
 
-[Windows Installer](https://app.sakundi.io:9090/zk-firma-digital.exe)
+    Note: The Windows installer includes a couple of Javascript dependencies, Nodejs and Snarkjs. The installer also includes the zkey necessary for generating valid ZK proofs, which makes it a bit heavy.
 
-* Verify the sha256 hash sum:
-```bash
-certutil -hashfile "C:\file\path\zk-firma-digital.exe" SHA256
-```
-This should be equal to:
-```bash
-108afe1c5dc6648dc7c133cc424897ea69cb241e96b11d8726f6452c88d32940  zk-firma-digital.exe
-```
-* If the hash sums is correct, then just run the zk-firma-digital installer.
+4. Launch the program: 
+    * Insert your smart card into a USB port.
+    * Run: 
+        ```bash
+        "C:\Program Files\zk-firma-digital\zk-firma-digital.exe"
+        ```
+    * Alternatively, search for ZK Firma Digital in the Start menu.
 
-The Windows installer includes a couple of Javascript dependencies, Nodejs and Snarkjs. The installer also
-includes the zkey necessary for generating valid ZK proofs, which makes it a bit heavy.
+### Linux (Debian)
 
-* Finally, to run the program, introduce your smart card in a USB slot and execute the following command:
+1. Download the installer:
+    ```bash
+    wget https://app.sakundi.io:9090/zk-firma-digital_0.6.3_amd64.deb
+    ```
+2. Verify the sha256 hash:
+    ```bash
+    sha256sum zk-firma-digital_0.6.3_amd64.deb
+    ```
+    The result should match:
+    ```bash
+    8c8f38ceae2d6b99c07396156c7ea3ccb915e705360ba3cd8bbbe408574622c4  zk-firma-digital_0.6.3_amd64.deb
+    ```
+3. Install the Debian package:
+    ```bash
+    sudo dpkg -i zk-firma-digital_0.6.3_amd64.deb
+    ```
+4. Launch the program:
+    * Insert your smart card into a USB port.
+    * Run: 
+        ```bash
+        /usr/share/zk-firma-digital/zk-firma-digital.bin
+        ```
+    * Alternatively, search for the app in your application launcher.
+  
+### MacOS
 
-```bash
-    "C:\Program Files\zk-firma-digital\zk-firma-digital.exe"
-```
-Or just look for ```Zk Firma Digital``` in the app search.
+1. Download the installer:
+[MacOs Installer](https://app.sakundi.io:9090/zk-firma-digital.pkg)
 
-**On Linux (At moment only Debian):**
+2. Verify the sha256 hash:
+    ```bash
+    sha256sum zk-firma-digital.pkg
+    ```
+    The result should match:
+    ```bash
+    c671b84bcea6e6d4261947d2e612ead6db9f0b8ead99321333551172662d6a39  zk-firma-digital.pkg
+    ```
+3. Run the installer if the hash matches.
 
-To install the software and be able to generate proofs from your Firma Digital card, please follow these steps:
-* Download the installer and the zkey file:
-```bash
-    wget https://app.sakundi.io:9090/zk-firma-digital_0.4_amd64.deb
-    wget https://app.sakundi.io:9090/firma-verifier.zkey
-```
-* Verify the sha256 hash sum for both files:
-```bash
-sha256sum zk-firma-digital_0.4_amd64.deb
-sha256sum firma-verifier.zkey
-```
-This should be equal to:
-```bash
-13da8ca1539d71dc9dc57ee4b1ce7041a20c325a034d0c1ca2c4945545e7fba5  zk-firma-digital_0.4_amd64.deb
-91ad03aa0e33430d29361ae450f01d7a4992e068a7d6dddf954886fc4205aa21  firma-verifier.zkey
-```
-* If the hash sums are correct, then install the zk-firma-digital Debian package:
-```bash
-    sudo dpkg -i zk-firma-digital_0.4_amd64.deb
-```
-* Then, move the firma-verifier.zkey to the required directory:
-```bash
-    sudo mv firma-verifier.zkey /usr/share/zk-firma-digital/zk-artifacts/
-```
-* Finally, to run the program, introduce your smart card in a USB slot and execute the following command:
+    Note: The MacOS installer includes a couple of Javascript dependencies, Nodejs and Snarkjs. The installer also includes the zkey necessary for generating valid ZK proofs, which makes it a bit heavy.
 
-```bash
-    /usr/share/zk-firma-digital/zk-firma-digital.bin
-```
+4. Launch the program: 
+    * Insert your smart card into a USB port.
+    * Run: 
+        ```bash
+        "open /Applications/zk-firma-digital.app/Contents/MacOS/zk-firma-digital"
+        ```
+    * Alternatively, search for ZK Firma Digital in the Finder menu.
