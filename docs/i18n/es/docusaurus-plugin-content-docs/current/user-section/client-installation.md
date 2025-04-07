@@ -11,61 +11,78 @@ custom_edit_url: null
 
 ## Instalación
 
-**En Windows:**
+### Windows
 
-Por favor, siga estos pasos:
+1. Descargue el instalador:  
+[Instalador para Windows](https://app.sakundi.io:9090/zk-firma-digital-0.6.3.exe)
 
-* Descargue el instalador haciendo clic en el siguiente enlace:
+2. Verifique el hash sha256:
+    ```bash
+    certutil -hashfile "C:\file\path\zk-firma-digital-0.6.3.exe" SHA256
+    ```
+    El resultado debe coincidir con:
+    ```bash
+    c116a271668e9e430116cd335f7bb4128d1af4d387ad7593330850932281cf07  zk-firma-digital-0.6.3.exe
+    ```
+3. Ejecute el instalador si el hash coincide.
 
-[Instalador de Windows](https://app.sakundi.io:9090/zk-firma-digital.exe)
+    Nota: El instalador de Windows incluye un par de dependencias de Javascript, Nodejs y Snarkjs. También incluye el archivo zkey necesario para generar pruebas ZK válidas, lo cual lo hace un poco pesado.
 
-* Verifique el hash sha256:
-```bash
-certutil -hashfile "C:\file\path\zk-firma-digital.exe" SHA256
-```
-Este debería ser igual a:
-```bash
-108afe1c5dc6648dc7c133cc424897ea69cb241e96b11d8726f6452c88d32940  zk-firma-digital.exe
-```
-* Si el hash es correcto, simplemente ejecute el instalador de zk-firma-digital.
+4. Inicie el programa:  
+    * Inserte su tarjeta inteligente en un puerto USB.  
+    * Ejecute: 
+        ```bash
+        "C:\Program Files\zk-firma-digital\zk-firma-digital.exe"
+        ```
+    * Alternativamente, busque ZK Firma Digital en el menú de inicio.
 
-El instalador para Windows incluye un par de dependencias de Javascript, Nodejs y Snarkjs. También incluye el archivo zkey necesario para generar pruebas válidas de conocimiento cero, lo cual lo hace un poco pesado.
+### Linux (Debian)
 
-* Finalmente, para ejecutar el programa, introduzca su tarjeta inteligente en un puerto USB y ejecute el siguiente comando:
+1. Descargue el instalador:
+    ```bash
+    wget https://app.sakundi.io:9090/zk-firma-digital_0.6.3_amd64.deb
+    ```
+2. Verifique el hash sha256:
+    ```bash
+    sha256sum zk-firma-digital_0.6.3_amd64.deb
+    ```
+    El resultado debe coincidir con:
+    ```bash
+    8c8f38ceae2d6b99c07396156c7ea3ccb915e705360ba3cd8bbbe408574622c4  zk-firma-digital_0.6.3_amd64.deb
+    ```
+3. Instale el paquete Debian:
+    ```bash
+    sudo dpkg -i zk-firma-digital_0.6.3_amd64.deb
+    ```
+4. Inicie el programa:
+    * Inserte su tarjeta inteligente en un puerto USB.  
+    * Ejecute: 
+        ```bash
+        /usr/share/zk-firma-digital/zk-firma-digital.bin
+        ```
+    * Alternativamente, busque la aplicación en el lanzador de aplicaciones.
 
-```bash
-    "C:\Program Files\zk-firma-digital\zk-firma-digital.exe"
-```
-O simplemente busque ```Zk Firma Digital``` en la barra de búsqueda de aplicaciones.
+### macOS
 
-**En Linux (Actualmente solo para Debian):**
+1. Descargue el instalador:  
+[Instalador para macOS](https://app.sakundi.io:9090/zk-firma-digital.pkg)
 
-Para instalar el software y generar pruebas utilizando su tarjeta de Firma Digital, por favor siga estos pasos:
-* Descargue el instalador y el archivo zkey:
-```bash
-    wget https://app.sakundi.io:9090/zk-firma-digital_0.4_amd64.deb
-    wget https://app.sakundi.io:9090/firma-verifier.zkey
-```
-* Verifique el hash sha256 de ambos archivos:
-```bash
-sha256sum zk-firma-digital_0.4_amd64.deb
-sha256sum firma-verifier.zkey
-```
-Estos deberían ser iguales a:
-```bash
-13da8ca1539d71dc9dc57ee4b1ce7041a20c325a034d0c1ca2c4945545e7fba5  zk-firma-digital_0.4_amd64.deb
-91ad03aa0e33430d29361ae450f01d7a4992e068a7d6dddf954886fc4205aa21  firma-verifier.zkey
-```
-* Si los hashes son correctos, instale el paquete Debian de zk-firma-digital:
-```bash
-    sudo dpkg -i zk-firma-digital_0.4_amd64.deb
-```
-* Luego, mueva el archivo firma-verifier.zkey al directorio requerido:
-```bash
-    sudo mv firma-verifier.zkey /usr/share/zk-firma-digital/zk-artifacts/
-```
-* Finalmente, para ejecutar el programa, introduzca su tarjeta inteligente en un puerto USB y ejecute el siguiente comando:
+2. Verifique el hash sha256:
+    ```bash
+    sha256sum zk-firma-digital.pkg
+    ```
+    El resultado debe coincidir con:
+    ```bash
+    c671b84bcea6e6d4261947d2e612ead6db9f0b8ead99321333551172662d6a39  zk-firma-digital.pkg
+    ```
+3. Ejecute el instalador si el hash coincide.
 
-```bash
-    /usr/share/zk-firma-digital/zk-firma-digital.bin
-```
+    Nota: El instalador de macOS incluye un par de dependencias de Javascript, Nodejs y Snarkjs. También incluye el archivo zkey necesario para generar pruebas ZK válidas, lo cual lo hace un poco pesado.
+
+4. Inicie el programa:  
+    * Inserte su tarjeta inteligente en un puerto USB.  
+    * Ejecute: 
+        ```bash
+        open /Applications/zk-firma-digital.app/Contents/MacOS/zk-firma-digital
+        ```
+    * Alternativamente, busque ZK Firma Digital en el menú Finder.
