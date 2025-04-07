@@ -86,11 +86,3 @@ custom_edit_url: null
         open /Applications/zk-firma-digital.app/Contents/MacOS/zk-firma-digital
         ```
     * Alternativamente, busque ZK Firma Digital en el menú Finder.
-
-    sudo mv firma-verifier.zkey /usr/share/zk-firma-digital/zk-artifacts/
-```
-* Finalmente, para ejecutar el programa, introduzca su tarjeta inteligente en un puerto USB y ejecute el siguiente comando:
-
-```bash
-    /usr/share/zk-firma-digital/zk-firma-digital.bin
-```
