@@ -9,7 +9,7 @@ const sidebars = {
     {
       type: "category",
       label: "Zikuani",
-      items: ["user-section/what-is-zk-firma-digital",
+      items: ["user-section/what-is-zikuani",
               "user-section/client-installation"
       ],
     },

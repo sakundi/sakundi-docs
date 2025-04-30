@@ -1,5 +1,5 @@
 ---
-id: what-is-zk-firma-digital
+id: what-is-zikuani
 title: What is Zikuani?
 sidebar_label: What is Zikuani?
 description: Sakundi - Your partner on user privacy protection
