@@ -1,14 +1,14 @@
 ---
 id: what-is-zk-firma-digital
-title: ¿Qué es ZK Firma Digital?
-sidebar_label: ¿Qué es ZK Firma Digital?
+title: ¿Qué es Zikuani?
+sidebar_label: ¿Qué es Zikuani?
 description: Sakundi - Your partner on user privacy protection
 keywords: [sakundi, blockchain]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-ZK Firma Digital es un protocolo de conocimiento cero que permite a los titulares de una tarjeta de identidad digital firmada por el gobierno probar su identidad de una manera que preserva la privacidad. La solución proporciona herramientas para generar y verificar pruebas, autenticar usuarios y realizar verificaciones utilizando tecnologías Web2 o Web3. El servicio se ofrece inicialmente para Costa Rica.
+Zikuani es un protocolo de conocimiento cero que permite a los titulares de una tarjeta de identidad digital firmada por el gobierno probar su identidad de una manera que preserva la privacidad. La solución proporciona herramientas para generar y verificar pruebas, autenticar usuarios y realizar verificaciones utilizando tecnologías Web2 o Web3. El servicio se ofrece inicialmente para Costa Rica.
 
 El proyecto tiene como objetivo desarrollar una solución de infraestructura basada en pruebas de conocimiento cero para mejorar el sistema de identidad digital. Nos esforzamos por fortalecer la privacidad de los ciudadanos minimizando la recolección de datos, permitiendo que las personas accedan a una amplia gama de servicios valiosos sin divulgar información sensible.
 

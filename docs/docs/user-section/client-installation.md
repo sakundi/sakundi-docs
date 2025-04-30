@@ -33,7 +33,7 @@ custom_edit_url: null
         ```bash
         "C:\Program Files\zk-firma-digital\zk-firma-digital.exe"
         ```
-    * Alternatively, search for ZK Firma Digital in the Start menu.
+    * Alternatively, search for Zikuani in the Start menu.
 
 ### Linux (Debian)
 
@@ -84,4 +84,4 @@ custom_edit_url: null
         ```bash
         "open /Applications/zk-firma-digital.app/Contents/MacOS/zk-firma-digital"
         ```
-    * Alternatively, search for ZK Firma Digital in the Finder menu.
+    * Alternatively, search for Zikuani in the Finder menu.

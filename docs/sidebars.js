@@ -8,7 +8,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "ZK Firma Digital",
+      label: "Zikuani",
       items: ["user-section/what-is-zk-firma-digital",
               "user-section/client-installation"
       ],

@@ -1,14 +1,14 @@
 ---
 id: what-is-zk-firma-digital
-title: What is ZK Firma Digital?
-sidebar_label: What is ZK Firma Digital?
+title: What is Zikuani?
+sidebar_label: What is Zikuani?
 description: Sakundi - Your partner on user privacy protection
 keywords: [sakundi, blockchain]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-ZK Firma Digital is a zero-knowledge protocol that allows holders of a
+Zikuani is a zero-knowledge protocol that allows holders of a
 government-signed digital identity card to prove their identity in a
 privacy preserving way. It provides tools to generate and verify proofs,
 authenticate users, and verify proofs using Web2 or Web3 technologies.
