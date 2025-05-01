@@ -31,24 +31,16 @@
     "message": "Sección de usuario",
     "description": "The label of footer link with label=About Tikuna linking to /docs/about/team"
   },
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/edenia/tikuna"
-  },
   "link.item.label.Discord": {
     "message": "Discord",
     "description": "The label of footer link with label=Discord linking to https://discord.com/invite/YeGcF6QwhP"
-  },
-  "link.item.label.Twitter": {
-    "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/EdeniaWeb3"
   },
   "link.item.label.Blog": {
     "message": "Blog",
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "copyright": {
-    "message": "Copyright © 2022 Sakundi",
+    "message": "Copyright © 2025 Sakundi",
     "description": "The footer copyright"
   }
 }
