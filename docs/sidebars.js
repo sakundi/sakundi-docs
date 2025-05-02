@@ -15,6 +15,11 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "ZK Voto Digital",
+      items: ["user-section/what-is-zk-voto-digital"],
+    },
+    {
+      type: "category",
       label: "Research",
       items: ["research/intro",
               "research/stateoftheart",
