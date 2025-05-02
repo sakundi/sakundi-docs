@@ -50,5 +50,20 @@ certificate and the sensitive informatin contained there. On the other hand,
 depending on the use case the service provider can ask the user to reveal specific
 information from the certificate that the person has to accept and confirm.
 
+# Potential Use Cases
 
+Zikuani many potential use cases where we can help improve user privacy, such as:
+
+* Anonymous authentication
+* Decentralized anonymous voting
+* Anonymous proof of humanity
+* Health data privacy
+* Know Your Customer (KYC)
+* Privacy-preserving verification
+* Anti-Sybil mechanisms
+* DAO governance
+* Quadratic Funding (QF)
+* Wallet recovery
+
+And many more
 
