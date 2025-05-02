@@ -52,7 +52,7 @@ information from the certificate that the person has to accept and confirm.
 
 # Potential Use Cases
 
-Zikuani many potential use cases where we can help improve user privacy, such as:
+Zikuani has many potential use cases where we can help improve user privacy, such as:
 
 * Anonymous authentication
 * Decentralized anonymous voting
