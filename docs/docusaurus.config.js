@@ -125,11 +125,11 @@ const config = {
             ],
           },
           {
-            title: "Sakundi Community",
+            title: "Resources",
             items: [
               {
-                label: "Discord",
-                href: "https://discord.gg/Ys5f6H9DFm",
+                label: "Github",
+                href: "https://github.com/kuronosec",
               },
               {
                 label: "Twitter",
