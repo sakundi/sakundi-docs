@@ -1,8 +1,8 @@
 ---
 id: client-installation
-title: Local Client Installation
-sidebar_label: Local Client Installation
-description: Local Client Installation
+title: Wallet Installation
+sidebar_label: Wallet Installation
+description: Wallet Installation
 keywords: [sakundi, blockchain]
 hide_table_of_contents: true
 custom_edit_url: null
