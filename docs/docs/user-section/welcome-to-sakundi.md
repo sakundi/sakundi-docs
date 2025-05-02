@@ -10,7 +10,7 @@ custom_edit_url: null
 
 ## Introduction:
 
-Sakundi is an organization that conducts research in security and privacy. Sakundi's mission is to ensure the security and privacy of technology users by developing intuitive solutions based on scientific research. Our team is composed of experts in cybersecurity, AI, blockchain, fintech ecosystems, and DeFi.
+Sakundi is an organization that performs research and development related to cybersecurity and privacy. Sakundi's aims to ensure the security and privacy of technology users by developing intuitive solutions based on scientific research.
 
 ## Our Mission:
 
