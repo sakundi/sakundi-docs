@@ -7,7 +7,7 @@ keywords: [sakundi, blockchain]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
-# ZK Voto Digital: Votación Anónima y Segura Usando el Blockchain y Tecnologías de Protección de Provacidad
+# ZK Voto Digital: Votación Anónima y Segura Usando el Blockchain
 
 **ZK Voto Digital** es un proyecto que busca abordar el **problema de la privacidad de los datos personales** en la era digital. A menudo, la información personal compartida en línea puede ser robada por ciberdelincuentes o distribuida en la web. Para contrarrestar esto, se creó **ZK Filma Digital**, una tecnología que permite **probar la identidad de una persona sin necesidad de enviar o revelar sus datos sensibles**. Esto significa que una persona puede ser anónima, pero aún así demostrar quién es.
 
