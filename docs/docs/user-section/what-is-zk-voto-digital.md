@@ -8,7 +8,7 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# ZK Digital Vote: Anonymous and Secure Voting Using Blockchain and Privacy-preserving Technologies
+# ZK Digital Vote: Anonymous and Secure Voting Using The Blockchain
 
 **ZK Digital Vote** is a project that seeks to address the **problem of personal data privacy** in the digital age. Often, personal information shared online can be stolen by cybercriminals or distributed on the web. To counter this, **ZK Digital Signature** was created, a technology that allows **proving a person's identity without needing to send or reveal their sensitive data**. This means a person can be anonymous, but still demonstrate who they are.
 
