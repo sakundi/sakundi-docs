@@ -1,2 +1,2 @@
 # sakundi-docs
-Documentation Sakundi Project
+Documentation for the Sakundi Projects
