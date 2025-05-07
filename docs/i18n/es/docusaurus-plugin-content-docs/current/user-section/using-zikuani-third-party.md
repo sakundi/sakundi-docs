@@ -164,8 +164,6 @@ Esta app:
 
 ---
 
-## 🔐 Casos de Uso
+## Mira el ejemplo completo en el siguiente enlace:
 
-- Emisión de identidades con pruebas de conocimiento cero
-- Flujos de login con monederos criptográficos
-- Compartir credenciales seguras en sistemas Web3 o identidad digital
+[https://github.com/sakundi/zikuani-boilerplate](https://github.com/sakundi/zikuani-boilerplate)
