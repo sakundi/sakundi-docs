@@ -10,7 +10,8 @@ const sidebars = {
       type: "category",
       label: "Zikuani",
       items: ["user-section/what-is-zikuani",
-              "user-section/client-installation"
+              "user-section/client-installation",
+              "user-section/using-zikuani-third-party"
       ],
     },
     {
