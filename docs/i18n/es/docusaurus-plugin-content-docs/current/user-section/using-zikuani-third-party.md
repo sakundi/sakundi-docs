@@ -1,15 +1,16 @@
 ---
 id: using-zikuani-third-party
-title: Using Zikuani as a provider
-sidebar_label: Using Zikuani as a provider
-description: Sakundi - Using Zikuani as a provider
+title: Usando Zikuani como proveedor
+sidebar_label: Usando Zikuani como proveedor
+description: Sakundi - Usando Zikuani como proveedor
 keywords: [sakundi, zikuani, identity, wallet]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
-# 🧪 Tutorial de Cliente OAuth con Express.js y Credenciales de Conocimiento Cero
+# 🧪 Tutorial: Cómo integrar código del cliente con el Wallet Zikuani para obtener pruebas de identidad
 
-Este tutorial explica cómo funciona un cliente OAuth 2.0 usando `Express.js`, `axios` y un servidor OAuth personalizado que devuelve una **credencial verificable** (posiblemente usando pruebas de conocimiento cero, ZK).
+Este tutorial explica cómo crear un cliente OAuth 2.0 usando `Express.js`, `axios` para autenticarse y recibir una **credencial verificable** usando pruebas de conocimiento cero. Al final el cliente puede obtner una prueba de identidad
+del usuario sin necesidad de obtener datos sensibles.
 
 ---
 

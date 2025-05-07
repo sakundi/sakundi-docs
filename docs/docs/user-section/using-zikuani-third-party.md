@@ -9,7 +9,7 @@ custom_edit_url: null
 ---
 # 🧪 OAuth Client Tutorial with Express.js and Zero-Knowledge Credentials
 
-This tutorial explains how an OAuth 2.0 client works using `Express.js`, `axios`, and a custom OAuth server that returns a **verifiable credential** (potentially using ZK proofs).
+This tutorial explains how to create an OAuth 2.0 client using `Express.js` and `axios` to authenticate and receive a **verifiable credential** using zero-knowledge proofs. In the end, the client can obtain a proof of the user's identity without needing to access sensitive data.
 
 ---
 
