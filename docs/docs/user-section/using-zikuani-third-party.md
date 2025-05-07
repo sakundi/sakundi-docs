@@ -7,7 +7,7 @@ keywords: [sakundi, zikuani, identity, wallet]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
-# 🧪 Tutorial: How to integrate customer code with the Zikuani wallet to obtain proofs of indentity
+# 🧪 Tutorial: How to integrate customer code with the Zikuani wallet to obtain proofs of identity
 
 This tutorial explains how to create an OAuth 2.0 client using `Express.js` and `axios` to authenticate and receive a **verifiable credential** using zero-knowledge proofs. In the end, the client can obtain a proof of the user's identity without needing to access sensitive data.
 
@@ -163,8 +163,6 @@ This app:
 
 ---
 
-## 🔐 Use Cases
+# See the complete example here:
 
-- Zero-Knowledge identity issuance
-- OAuth + cryptographic wallet login flows
-- Secure credential sharing for Web3 / digital ID systems
+[https://github.com/sakundi/zikuani-boilerplate](https://github.com/sakundi/zikuani-boilerplate)
