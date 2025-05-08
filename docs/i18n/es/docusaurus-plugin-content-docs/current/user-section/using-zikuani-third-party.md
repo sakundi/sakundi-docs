@@ -9,8 +9,7 @@ custom_edit_url: null
 ---
 # 🧪 Tutorial: Cómo integrar código del cliente con el Wallet Zikuani para obtener pruebas anónimas de identidad
 
-Este tutorial explica cómo crear un cliente OAuth 2.0 usando `Express.js`, `axios` para autenticarse y recibir una **credencial verificable** usando pruebas de conocimiento cero. Al final el cliente puede obtner una prueba de identidad
-del usuario sin necesidad de obtener datos sensibles.
+Este tutorial explica cómo crear un cliente Web (Javascript) usando `Express.js`, `axios` para autenticarse y recibir una **credencial verificable** usando pruebas de conocimiento cero. Al final el cliente puede obtner una prueba de identidad del usuario sin necesidad de obtener datos sensibles.
 
 ---
 
@@ -30,6 +29,7 @@ npm install express axios querystring
 La app obtiene configuraciones desde variables de entorno, con valores por defecto:
 
 ```js
+// Secrets
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID || "hello@example.com";
 const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET || "password";
 const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI || "http://localhost:3000/callback";
@@ -41,16 +41,28 @@ const ACCOUNT = process.env.ACCOUNT || "0xAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
 ## 🧾 3. Función para Decodificar JWT
 
-Esta función decodifica un JWT (Base64URL) **sin verificar la firma**:
+Esta función decodifica un JWT (Base64URL) que contiene un token:
 
 ```js
 function parseJwt(token) {
-  const base64Url = token.split('.')[1];
-  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-  const jsonPayload = decodeURIComponent(atob(base64).split('').map((c) =>
-    '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join('')
-  );
-  return JSON.parse(jsonPayload);
+    try {
+        // Split the token into its parts (Header, Payload, Signature)
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(
+            atob(base64)
+                .split('')
+                .map((c) => {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                })
+                .join('')
+        );
+
+        return JSON.parse(jsonPayload);
+    } catch (error) {
+        console.error('Invalid token:', error);
+        return null;
+    }
 }
 ```
 
@@ -61,26 +73,25 @@ function parseJwt(token) {
 Muestra una página con un enlace para iniciar la autenticación:
 
 ```js
-app.get('/', (req, res) => {
-  const authUrl = `${AUTH_SERVER_URL}/authorize?` + querystring.stringify({
-    grant_type: "code",
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET,
-    user_id: ACCOUNT,
-    redirect_uri: REDIRECT_URI,
-    scope: "zk-firma-digital",
-    state: String(Math.floor(Math.random() * 10000)),
-    nullifier_seed: 1000
+  app.get('/', (req, res) => {
+      // Step 1: Redirect user to the OAuth server for authorization
+      const authUrl = `${AUTH_SERVER_URL}/authorize?` + querystring.stringify({
+          grant_type: "code",
+          client_id: CLIENT_ID,
+          client_secret: CLIENT_SECRET,
+          user_id: ACCOUNT,
+          redirect_uri: REDIRECT_URI,
+          scope: "zk-firma-digital",        state: String(Math.floor(Math.random() * 10000)),
+          nullifier_seed: 1000
+      });
+      res.send(`
+          <h1>Autentíquese con su Firma Digital</h1>
+          <p><a href="${authUrl}">Haga click en el enlance para comenzar el proceso de autenticación</a></p>
+      `);
   });
-
-  res.send(\`
-    <h1>Autentíquese con su Firma Digital</h1>
-    <p><a href="\${authUrl}">Haga clic en el enlace para comenzar el proceso de autenticación</a></p>
-  \`);
-});
 ```
 
-Esto redirige al usuario al servidor OAuth.
+Esto redirige al usario al servicio de Sakundi que posteriormente activa el Wallet de Zikuani.
 
 ---
 
