@@ -7,7 +7,7 @@ keywords: [sakundi, zikuani, identity, wallet]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
-# 🧪 Tutorial: Cómo integrar código del cliente con el Wallet Zikuani para obtener pruebas de identidad
+# 🧪 Tutorial: Cómo integrar código del cliente con el Wallet Zikuani para obtener pruebas anónimas de identidad
 
 Este tutorial explica cómo crear un cliente OAuth 2.0 usando `Express.js`, `axios` para autenticarse y recibir una **credencial verificable** usando pruebas de conocimiento cero. Al final el cliente puede obtner una prueba de identidad
 del usuario sin necesidad de obtener datos sensibles.
