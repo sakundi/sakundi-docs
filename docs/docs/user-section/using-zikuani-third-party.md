@@ -7,9 +7,9 @@ keywords: [sakundi, zikuani, identity, wallet]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
-# 🧪 Tutorial: How to integrate customer code with the Zikuani wallet to obtain proofs of identity
+# 🧪 Tutorial: How to Integrate a Client with the Zikuani Wallet to Obtain Anonymous Identity Proofs
 
-This tutorial explains how to create an OAuth 2.0 client using `Express.js` and `axios` to authenticate and receive a **verifiable credential** using zero-knowledge proofs. In the end, the client can obtain a proof of the user's identity without needing to access sensitive data.
+This tutorial explains how to build a Web client (JavaScript) using `Express.js` and `axios` to authenticate and receive a **verifiable credential** using zero-knowledge proofs. In the end, the client can obtain a proof of the user's identity without needing to access sensitive data.
 
 ---
 
@@ -26,79 +26,91 @@ npm install express axios querystring
 
 ## 🔐 2. Environment Configuration
 
-The app reads configuration values from environment variables, with fallbacks:
+The app loads configuration from environment variables, with default values:
 
 ```js
+// Secrets
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID || "hello@example.com";
 const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET || "password";
 const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI || "http://localhost:3000/callback";
 const AUTH_SERVER_URL = process.env.REACT_APP_AUTH_SERVER_URL || "https://app.sakundi.io";
-const ACCOUNT = process.env.ACCOUNT || "0xAAAAAAAAAAAAAAAAAAAAAAAAAA";
+const ACCOUNT = process.env.ACCOUNT || "user@usermail.com";
 ```
 
 ---
 
-## 🧾 3. JWT Parser
+## 🧾 3. JWT Decoder Function
 
-This function decodes a JWT access token (Base64URL) **without verifying the signature**:
+This function decodes a JWT (Base64URL) containing a token:
 
 ```js
 function parseJwt(token) {
-  const base64Url = token.split('.')[1];
-  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-  const jsonPayload = decodeURIComponent(atob(base64).split('').map((c) =>
-    '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join('')
-  );
-  return JSON.parse(jsonPayload);
+    try {
+        // Split the token into its parts (Header, Payload, Signature)
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(
+            atob(base64)
+                .split('')
+                .map((c) => {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                })
+                .join('')
+        );
+
+        return JSON.parse(jsonPayload);
+    } catch (error) {
+        console.error('Invalid token:', error);
+        return null;
+    }
 }
 ```
 
 ---
 
-## 🚪 4. Entry Route `/`
+## 🚪 4. Root Route `/`
 
 Displays a page with a link to begin authentication:
 
 ```js
-app.get('/', (req, res) => {
-  const authUrl = `${AUTH_SERVER_URL}/authorize?` + querystring.stringify({
-    grant_type: "code",
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET,
-    user_id: ACCOUNT,
-    redirect_uri: REDIRECT_URI,
-    scope: "zk-firma-digital",
-    state: String(Math.floor(Math.random() * 10000)),
-    nullifier_seed: 1000
+  app.get('/', (req, res) => {
+      // Step 1: Redirect user to the OAuth server for authorization
+      const authUrl = `${AUTH_SERVER_URL}/authorize?` + querystring.stringify({
+          grant_type: "code",
+          client_id: CLIENT_ID,
+          user_id: ACCOUNT,
+          redirect_uri: REDIRECT_URI,
+          scope: "zk-firma-digital",
+          state: String(Math.floor(Math.random() * 10000)),
+          nullifier_seed: 1000
+      });
+      res.send(`
+          <h1>Authenticate with your Digital Signature</h1>
+          <p><a href="${authUrl}">Click the link to begin the authentication process</a></p>
+      `);
   });
-
-  res.send(\`
-    <h1>Autentíquese con su Firma Digital</h1>
-    <p><a href="\${authUrl}">Haga click en el enlace para comenzar el proceso de autenticación</a></p>
-  \`);
-});
 ```
 
-This redirects to the OAuth server.
+This redirects the user to the Sakundi service, which then activates the Zikuani Wallet.
 
 ---
 
 ## 🔄 5. Callback Route `/callback`
 
-Handles the redirect back from the OAuth server:
+Handles the return from the Zikuani Wallet backend server:
 
 ```js
 app.get('/callback', async (req, res) => {
   const { code, state } = req.query;
 ```
 
-### Step 1: Validate code
+### Step 1: Validate the code
 
 ```js
-  if (!code) return res.status(400).send('Se requiere código de autenticación');
+  if (!code) return res.status(400).send('Authentication code is required');
 ```
 
-### Step 2: Exchange code for access token
+### Step 2: Exchange the code for an access token
 
 ```js
   const response = await axios.post(\`\${AUTH_SERVER_URL}/token\`,
@@ -115,39 +127,43 @@ app.get('/callback', async (req, res) => {
   );
 ```
 
-### Step 3: Render token response
+### Step 3: If authentication is successful, use the token and verifiable credential data
 
 ```js
-  const { access_token, token_type, expires_in, verifiable_credential } = response.data;
+    const { access_token, token_type, expires_in, verifiable_credential } = response.data;
 
-  res.send(\`
-    <html>
-      <head><title>Token Recibido</title></head>
-      <style>
-        body { font-family: sans-serif; padding: 2em; line-height: 1.5; }
-        pre { background: #f4f4f4; padding: 1em; border-radius: 4px; overflow-x: auto; }
-      </style>
-      <body>
-        <h1>¡Token de acceso recibido!</h1>
-        <p><strong>Tipo de Token:</strong> \${token_type}</p>
-        <p><strong>Expira en:</strong> \${expires_in} minutos</p>
-        <p><strong>Token:</strong></p>
-        <pre>\${JSON.stringify(parseJwt(access_token), null, 2)}</pre>
-        <p><strong>Credencial verificable con prueba ZK:</strong></p>
-        <pre>\${JSON.stringify(verifiable_credential, null, 2)}</pre>
-      </body>
-    </html>
-  \`);
+    // Display the access token
+    res.send(`
+        <html>
+        <head>
+            <title>Access Token Received</title>
+            <style>
+            body { font-family: sans-serif; padding: 2em; line-height: 1.5; }
+            h1 { color: #2c3e50; }
+            pre { background: #f4f4f4; padding: 1em; border-radius: 4px; overflow-x: auto; }
+            </style>
+        </head>
+        <body>
+            <h1>Access token received!</h1>
+            <p><strong>Token Type:</strong> ${token_type}</p>
+            <p><strong>Expires in:</strong> ${expires_in} minutes</p>
+            <p><strong>Token:</strong></p>
+            <pre>${JSON.stringify(parseJwt(access_token), null, 2)}</pre>
+            <p><strong>Verifiable Credential with ZK proof:</strong></p>
+            <pre>${JSON.stringify(verifiable_credential, null, 2)}</pre>
+        </body>
+        </html>
+    `);
 ```
 
 ---
 
-## 🚀 6. Start the Server
+## 🚀 6. Start the Client Server
 
 ```js
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(\`OAuth client running on http://localhost:\${PORT}\`);
+  console.log(\`OAuth client running at http://localhost:\${PORT}\`);
 });
 ```
 
@@ -156,13 +172,15 @@ app.listen(PORT, () => {
 ## ✅ Summary
 
 This app:
-- Sends a user to authenticate with an OAuth server
+- Redirects the user to authenticate with the Zikuani Wallet backend
 - Handles the `callback` with an authorization code
-- Exchanges the code for an access token and a ZK verifiable credential
-- Displays token details and credential nicely in the browser
+- Exchanges the code for an access token and a verifiable credential
+- Uses and displays the token and credential in the browser
+
+In a real-world use case, the VC would be used to grant the user access to a specific service based on properties like nationality or age.
 
 ---
 
-# See the complete example here:
+## See the full example at:
 
 [https://github.com/sakundi/zikuani-boilerplate](https://github.com/sakundi/zikuani-boilerplate)
