@@ -34,7 +34,7 @@ const CLIENT_ID = process.env.REACT_APP_CLIENT_ID || "hello@example.com";
 const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET || "password";
 const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI || "http://localhost:3000/callback";
 const AUTH_SERVER_URL = process.env.REACT_APP_AUTH_SERVER_URL || "https://app.sakundi.io";
-const ACCOUNT = process.env.ACCOUNT || "0xAAAAAAAAAAAAAAAAAAAAAAAAAA";
+const ACCOUNT = process.env.ACCOUNT || "user@usermail.com";
 ```
 
 ---
@@ -78,7 +78,6 @@ Muestra una página con un enlace para iniciar la autenticación:
       const authUrl = `${AUTH_SERVER_URL}/authorize?` + querystring.stringify({
           grant_type: "code",
           client_id: CLIENT_ID,
-          client_secret: CLIENT_SECRET,
           user_id: ACCOUNT,
           redirect_uri: REDIRECT_URI,
           scope: "zk-firma-digital",        state: String(Math.floor(Math.random() * 10000)),
@@ -97,7 +96,7 @@ Esto redirige al usario al servicio de Sakundi que posteriormente activa el Wall
 
 ## 🔄 5. Ruta de Callback `/callback`
 
-Maneja el retorno del servidor OAuth:
+Maneja el retorno del servidor de Backend del Wallet de Zikuani:
 
 ```js
 app.get('/callback', async (req, res) => {
@@ -127,34 +126,38 @@ app.get('/callback', async (req, res) => {
   );
 ```
 
-### Paso 3: Mostrar los datos del token
+### Paso 3: Si se autentica correctamente, usar los datos del token y la credencial verificable obtenido
 
 ```js
-  const { access_token, token_type, expires_in, verifiable_credential } = response.data;
+    const { access_token, token_type, expires_in, verifiable_credential } = response.data;
 
-  res.send(\`
-    <html>
-      <head><title>Token Recibido</title></head>
-      <style>
-        body { font-family: sans-serif; padding: 2em; line-height: 1.5; }
-        pre { background: #f4f4f4; padding: 1em; border-radius: 4px; overflow-x: auto; }
-      </style>
-      <body>
-        <h1>¡Token de acceso recibido!</h1>
-        <p><strong>Tipo de Token:</strong> \${token_type}</p>
-        <p><strong>Expira en:</strong> \${expires_in} minutos</p>
-        <p><strong>Token:</strong></p>
-        <pre>\${JSON.stringify(parseJwt(access_token), null, 2)}</pre>
-        <p><strong>Credencial verificable con prueba ZK:</strong></p>
-        <pre>\${JSON.stringify(verifiable_credential, null, 2)}</pre>
-      </body>
-    </html>
-  \`);
+    // Display the access token
+    res.send(`
+        <html>
+        <head>
+            <title>Token Recibido</title>
+            <style>
+            body { font-family: sans-serif; padding: 2em; line-height: 1.5; }
+            h1 { color: #2c3e50; }
+            pre { background: #f4f4f4; padding: 1em; border-radius: 4px; overflow-x: auto; }
+            </style>
+        </head>
+        <body>
+            <h1>¡Token de acceso recibido!</h1>
+            <p><strong>Tipo de Token:</strong> ${token_type}</p>
+            <p><strong>Expira en:</strong> ${expires_in} minutos</p>
+            <p><strong>Token:</strong></p>
+            <pre>${JSON.stringify(parseJwt(access_token), null, 2)}</pre>
+            <p><strong>Credencial verificable con prueba ZK:</strong></p>
+            <pre>${JSON.stringify(verifiable_credential, null, 2)}</pre>
+        </body>
+        </html>
+    `);
 ```
 
 ---
 
-## 🚀 6. Iniciar el Servidor
+## 🚀 6. Iniciar el servicio del cliente
 
 ```js
 const PORT = process.env.PORT || 3000;
@@ -168,10 +171,13 @@ app.listen(PORT, () => {
 ## ✅ Resumen
 
 Esta app:
-- Redirige al usuario para autenticarse con un servidor OAuth
+- Redirige al usuario para autenticarse con un servidor de Backend del Wallet de Zikuani
 - Maneja el `callback` con un código de autorización
 - Intercambia el código por un token de acceso y una credencial verificable
-- Muestra los detalles del token y credencial en el navegador
+- Usa los detalles del token y credencial en el navegador, mostrandolos
+
+En un caso de uso de la vida real, el VC se usaria para permitir el acceso del usuario a un servicio
+específico, basado en la garantía de la nacionalidad del usuario y la edad por ejemplo.
 
 ---
 
