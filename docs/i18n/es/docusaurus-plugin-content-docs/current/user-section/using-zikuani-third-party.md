@@ -9,7 +9,7 @@ custom_edit_url: null
 ---
 # 🧪 Tutorial: Cómo integrar código del cliente con el Wallet Zikuani para obtener pruebas anónimas de identidad
 
-Este tutorial explica cómo crear un cliente Web (Javascript) usando `Express.js`, `axios` para autenticarse y recibir una **credencial verificable** usando pruebas de conocimiento cero. Al final el cliente puede obtner una prueba de identidad del usuario sin necesidad de obtener datos sensibles.
+Este tutorial explica cómo crear un cliente Web (Javascript) usando `Express.js`, `axios` para autenticarse y recibir una **credencial verificable** usando pruebas de conocimiento cero. Al final el cliente puede recibir una prueba irrefutable de identidad del usuario sin necesidad de exponer datos personales sensibles.
 
 ---
 
@@ -68,7 +68,7 @@ function parseJwt(token) {
 
 ---
 
-## 🚪 4. Ruta Principal `/`
+## 🚪 4. Ruta Principal `/login`
 
 Muestra una página con un enlace para iniciar la autenticación:
 
