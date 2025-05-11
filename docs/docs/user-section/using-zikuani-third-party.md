@@ -9,7 +9,7 @@ custom_edit_url: null
 ---
 # 🧪 Tutorial: How to Integrate a Client with the Zikuani Wallet to Obtain Anonymous Identity Proofs
 
-This tutorial explains how to build a Web client (JavaScript) using `Express.js` and `axios` to authenticate and receive a **verifiable credential** using zero-knowledge proofs. In the end, the client can obtain a proof of the user's identity without needing to access sensitive data.
+This tutorial explains how to build a Web client (JavaScript) using `Express.js` and `axios` to authenticate and receive a **verifiable credential** using zero-knowledge proofs. In the end, the client can get an irrefutable proof of the user's identity without needing to expose sensitive information.
 
 ---
 
@@ -68,7 +68,7 @@ function parseJwt(token) {
 
 ---
 
-## 🚪 4. Root Route `/`
+## 🚪 4. Root Route `/login`
 
 Displays a page with a link to begin authentication:
 
