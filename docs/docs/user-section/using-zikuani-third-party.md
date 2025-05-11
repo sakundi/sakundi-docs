@@ -73,7 +73,7 @@ function parseJwt(token) {
 Displays a page with a link to begin authentication:
 
 ```js
-  app.get('/', (req, res) => {
+  app.get('/login', (req, res) => {
       // Step 1: Redirect user to the OAuth server for authorization
       const authUrl = `${AUTH_SERVER_URL}/authorize?` + querystring.stringify({
           grant_type: "code",
