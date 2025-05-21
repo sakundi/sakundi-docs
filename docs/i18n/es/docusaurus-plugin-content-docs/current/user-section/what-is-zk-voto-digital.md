@@ -9,9 +9,9 @@ custom_edit_url: null
 ---
 # ZK Voto Digital: Votación Anónima y Segura Usando el Blockchain
 
-**ZK Voto Digital** es un proyecto que busca abordar el **problema de la privacidad de los datos personales** en la era digital. A menudo, la información personal compartida en línea puede ser robada por ciberdelincuentes o distribuida en la web. Para contrarrestar esto, se creó **ZK Filma Digital**, una tecnología que permite **probar la identidad de una persona sin necesidad de enviar o revelar sus datos sensibles**. Esto significa que una persona puede ser anónima, pero aún así demostrar quién es.
+**ZK Voto Digital** es un proyecto que busca abordar el **problema de la privacidad de los datos personales** en la era digital. A menudo, la información personal compartida en línea puede ser robada por ciberdelincuentes o distribuida en la web. Para contrarrestar esto, se creó **Zikuani**, una tecnología que permite **probar la identidad de una persona sin necesidad de enviar o revelar sus datos sensibles**. Esto significa que una persona puede ser anónima, pero aún así demostrar quién es.
 
-Este proyecto ha sido presentado en eventos como la Tiko Blockchain, considerada una de las conferencias de blockchain más grandes de Costa Rica, ante una audiencia de más de 300 personas. La demostración en vivo de **ZK Voto Digital**, uno de los casos de uso más interesantes y comunes de ZK Filma Digital, permite a los usuarios **votar de forma anónima**.
+Este proyecto ha sido presentado en eventos como la Tiko Blockchain, considerada una de las conferencias de blockchain más grandes de Costa Rica, ante una audiencia de más de 300 personas. La demostración en vivo de **ZK Voto Digital**, uno de los casos de uso más interesantes y comunes de Zikuani, permite a los usuarios **votar de forma anónima**.
 
 ## ¿Qué se necesita para usar el sistema?
 
