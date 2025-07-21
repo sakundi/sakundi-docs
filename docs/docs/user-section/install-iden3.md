@@ -51,12 +51,23 @@ import "@nomicfoundation/hardhat-toolbox";
 const config: HardhatUserConfig = {
   solidity: "0.8.20",
   networks: {
-    blockdag: {
-      url: "http://<BLOCKDAG_RPC_HOST>:<PORT>", // e.g. http://127.0.0.1:38131
+    localhost: {
+      // This is just a hardhat testing address, do not reuse in productionq
+      url: "http://127.0.0.1:8545",
+      accounts: [privateKey]
+    },
+    amoy: {
+      // This is just a hardhat testing address, do not reuse in productionq
+      url: "https://rpc-amoy.polygon.technology/",
+      accounts: [privateKey]
+    },
+    "blockdag-testnet": {
       chainId: 1043,
-      accounts: ["<PRIVATE_KEY>"],
-      gasPrice: 1000000000 // adjust to network conditions
-    }
+      url: "http://65.21.121.242:18545",
+      accounts: [privateKey],
+      // ledgerAccounts: [`${process.env.LEDGER_ACCOUNT}`],
+      gasPrice: 1_000_000_000, // 1 gwei in wei,
+    },
   }
 };
 
