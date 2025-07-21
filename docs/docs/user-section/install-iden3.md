@@ -52,18 +52,16 @@ const config: HardhatUserConfig = {
   solidity: "0.8.20",
   networks: {
     localhost: {
-      // This is just a hardhat testing address, do not reuse in productionq
       url: "http://127.0.0.1:8545",
       accounts: [privateKey]
     },
     amoy: {
-      // This is just a hardhat testing address, do not reuse in productionq
       url: "https://rpc-amoy.polygon.technology/",
       accounts: [privateKey]
     },
     "blockdag-testnet": {
       chainId: 1043,
-      url: "http://65.21.121.242:18545",
+      url: "https://test-rpc.primordial.bdagscan.com/",
       accounts: [privateKey],
       gasPrice: 1_000_000_000, // 1 gwei in wei,
     },
