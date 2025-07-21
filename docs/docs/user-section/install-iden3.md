@@ -71,20 +71,35 @@ const config: HardhatUserConfig = {
 export default config;
 ```
 
-## 4. Deploy Contracts
+## 4. Then run the deployment scripts:
 
-To deploy any module (e.g. Poseidon or CredentialIssuer):
-
-```bash
-npx hardhat run scripts/deploy/deployPoseidons.ts --network blockdag
-npx hardhat run scripts/deploy/deployCredentialIssuer.ts --network blockdag
-```
-
-You can also deploy supporting libraries:
-
-```bash
-npx hardhat run scripts/deploy/deployLibraries.ts --network blockdag
-```
+1. Deploy create2AnchorAddress that we use for unified addresses
+   ```shell
+   npx hardhat run scripts/deploy/deployCreate2AddressAnchor.ts --network blockdag-testnet
+   ```
+2. Deploy libraries contracts
+   ```shell
+   npx hardhat run scripts/deploy/deployLibraries.ts --network blockdag-testnet
+   ```
+3. Deploy State contract
+   ```shell
+   npx hardhat run scripts/deploy/deployState.ts --network blockdag-testnet
+   ```
+4. Deploy Identity Tree Store contract
+   ```
+   npx hardhat run scripts/deploy/deployIdentityTreeStore.ts --network blockdag-testnet
+   ```
+5. Deploy Validators contracts
+   ```
+   npx hardhat run scripts/deploy/deployValidators.ts --network blockdag-testnet
+   ```
+6. Deploy Universal Verifier contract
+   ```
+   npx hardhat run scripts/deploy/deployUniversalVerifier.ts --network blockdag-testnet
+   ```
+7. Add validators to whitelisted validators in Universal Verifier
+   ```
+   npx hardhat run scripts/maintenance/addValidatorsToUniversalVerifier.ts --network blockdag-testnet
 
 ## 5. Troubleshooting
 
