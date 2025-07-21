@@ -8,7 +8,7 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# Deploying Iden3 Contracts on BlockDAG
+# Deploying Iden3 Contracts on BlockDAG testnet
 
 This guide explains how to install and deploy the [iden3-contracts](https://github.com/iden3/contracts) on a BlockDAG EVM-compatible network.
 
