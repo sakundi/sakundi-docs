@@ -65,7 +65,6 @@ const config: HardhatUserConfig = {
       chainId: 1043,
       url: "http://65.21.121.242:18545",
       accounts: [privateKey],
-      // ledgerAccounts: [`${process.env.LEDGER_ACCOUNT}`],
       gasPrice: 1_000_000_000, // 1 gwei in wei,
     },
   }
