@@ -11,7 +11,8 @@ const sidebars = {
       label: "Zikuani",
       items: ["user-section/what-is-zikuani",
               "user-section/client-installation",
-              "user-section/using-zikuani-third-party"
+              "user-section/using-zikuani-third-party",
+              "user-section/library-installation"
       ],
     },
     {
