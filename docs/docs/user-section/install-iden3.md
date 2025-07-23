@@ -16,9 +16,8 @@ This guide explains how to install and deploy the [iden3-contracts](https://gith
 
 - Node.js ≥ 18.x
 - Yarn ≥ 1.22.x or npm
-- Docker (optional, for local node)
-- A BlockDAG RPC endpoint
-- A funded EVM address on BlockDAG
+- A BlockDAG RPC endpoint (e.g. https://test-rpc.primordial.bdagscan.com/)
+- A funded EVM address on BlockDAG testnet
 - Git
 
 ## 1. Clone the Repository
@@ -42,7 +41,7 @@ npm install
 
 ## 3. Configure Hardhat for BlockDAG
 
-Edit or create `hardhat.config.ts` or `hardhat.config.js`:
+Edit or create `hardhat.config.ts` or `hardhat.config.js`, for instance:
 
 ```ts
 import { HardhatUserConfig } from "hardhat/config";
@@ -111,35 +110,6 @@ You may need to set a higher `gasPrice`:
 gasPrice: 1000000000 // or higher
 ```
 
-### Transaction Fee Cap
-
-To increase Hardhat's fee cap:
-
-```bash
-HARDHAT_NETWORK_MAX_TRANSACTION_FEE=3.0 \
-npx hardhat run scripts/deploy/deployCredentialIssuer.ts --network blockdag
-```
-
-### Nonce Too Low
-
-Check pending nonce with:
-
-```js
-await provider.getTransactionCount(wallet.address, "pending");
-```
-
-## 6. Verify RPC Sync Status
-
-Check sync progress:
-
-```bash
-curl -u user:pass -X POST http://<BLOCKDAG_RPC_HOST>:<PORT>/ \
-  -H "Content-Type: application/json" \
-  -d '{"jsonrpc":"2.0","method":"bdag_syncStatus","params":[],"id":1}'
-```
-
-Look for fields like `currentBlock`, `highestBlock`.
-
 ## 7. Notes
 
 - BlockDAG uses a custom EVM-compatible chain (Chain ID 1043).
@@ -149,5 +119,4 @@ Look for fields like `currentBlock`, `highestBlock`.
 
 - [Iden3 Contracts GitHub](https://github.com/iden3/contracts)
 - [Hardhat Docs](https://hardhat.org)
-- [Ethers.js Docs](https://docs.ethers.org)
 
