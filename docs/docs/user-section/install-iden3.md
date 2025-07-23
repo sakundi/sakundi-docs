@@ -10,6 +10,8 @@ custom_edit_url: null
 
 # Deploying Iden3 Contracts on BlockDAG testnet
 
+Zikuani requires the iden3 library to manage some of the identity related operations. iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments.
+
 This guide explains how to install and deploy the [iden3-contracts](https://github.com/iden3/contracts) on a BlockDAG EVM-compatible network.
 
 ## Prerequisites
