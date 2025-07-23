@@ -21,12 +21,12 @@ at the following addresses:
 
 |     Smart contract      |     Address                                |
 |:-----------------------:|:------------------------------------------:|
-|       **State***        | ***0x769671b481BA59414733BA95fe8aD2731d6652E6*** |
+|       **State**         | **0x769671b481BA59414733BA95fe8aD2731d6652E6** |
 |    **Validator MTP**    | 0x3998e052431e7008687ACEd665795dB4d33B1a10 |
 |    **Validator SIG**    | 0x1Cd67dE5790B7612BB5787fFaB319191fb90EDE7 |
 |    **Validator V3**     | 0xD3622eC51837a46C7979A4742Db81A647cd4EC14 |
 | **Universal Verifier**  | 0x1df35a82599809BEEa7f3c1Ce24e10d1F0a26914 |
-| **Universal Verifier V2****  | 0x1df35a82599809BEEa7f3c1Ce24e10d1F0a26914 |
+| **Universal Verifier V2**  | 0x1df35a82599809BEEa7f3c1Ce24e10d1F0a26914 |
 | **Identity Tree Store** | 0x5c9Ab5CFB628034987f8f083E3BC39dB09bb8DD1 |
 
 ## Prerequisites
