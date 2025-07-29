@@ -15,7 +15,7 @@ ZK Passport is a novel solution that turns a regular biometric passport into a f
 
 This guide explains how to install and deploy the [iden3-contracts](https://github.com/iden3/contracts) and the [zk-passport](https://github.com/rarimo/zk-passport) on a BlockDAG EVM-compatible network.
 
-## List of Iden3 Smart contracts deployed in BlockDag testnet
+## List of Iden3 Smart Contracts deployed in BlockDag testnet
 
 If you don't want to deploy the contracts yourself, just use the already available in BlockDag testnet,
 at the following addresses:
@@ -31,7 +31,7 @@ at the following addresses:
 | **Identity Tree Store** | 0x5c9Ab5CFB628034987f8f083E3BC39dB09bb8DD1 |
 
 
-## List of Rarimo Smart contracts deployed in BlockDag testnet
+## List of Rarimo's ZK Passport Smart Contracts deployed in BlockDag testnet
 
 |     Smart contract      |     Address                                |
 |:-----------------------:|:------------------------------------------:|
