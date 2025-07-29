@@ -8,11 +8,12 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# Deploying Iden3 Contracts on BlockDAG testnet
+# Deploying Identity Contracts on BlockDAG testnet
 
-Zikuani requires the iden3 library to manage some of the identity related operations. iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments.
+Zikuani requires the iden3 and some of the ZK Passport libraries to manage the identity related operations. iden3 is a next-generation private access control based on self-sovereign identity, designed for decentralised and trust-minimised environments.
+ZK Passport is a novel solution that turns a regular biometric passport into a flexible digital identity credential for Web3. Importantly, this is done without compromising the security of your sensitive data by using zero-knowledge proofs.
 
-This guide explains how to install and deploy the [iden3-contracts](https://github.com/iden3/contracts) on a BlockDAG EVM-compatible network.
+This guide explains how to install and deploy the [iden3-contracts](https://github.com/iden3/contracts) and the [zk-passport](https://github.com/rarimo/zk-passport) on a BlockDAG EVM-compatible network.
 
 ## List of Iden3 Smart contracts deployed in BlockDag testnet
 
@@ -28,6 +29,17 @@ at the following addresses:
 | **Universal Verifier**  | 0x1df35a82599809BEEa7f3c1Ce24e10d1F0a26914 |
 | **Universal Verifier V2**  | 0x1df35a82599809BEEa7f3c1Ce24e10d1F0a26914 |
 | **Identity Tree Store** | 0x5c9Ab5CFB628034987f8f083E3BC39dB09bb8DD1 |
+
+
+## List of Rarimo Smart contracts deployed in BlockDag testnet
+
+|     Smart contract      |     Address                                |
+|:-----------------------:|:------------------------------------------:|
+|       **PoseidonT3**        | 0xb8b9878dD82b60A5e682525484366188838B8181 |
+|    **PoseidonUnit2L**    | 0x22bcd73CB4caAB3fd019061A08d66b1cCF0317A8 |
+|    **PoseidonT4**    | 0x4DdA2CdaaCBaea59F23976bA08041094F2115B10 |
+|    **PoseidonUnit3L**     | 0xea0c42239213C2f31FF09373133650F615E33cbF |
+| **RegistrationSMT**  | 0x9C01fc3f623DD7290868a27aC97e0C2B20C7C475 |
 
 ## Prerequisites
 
@@ -117,7 +129,42 @@ export default config;
    ```
    npx hardhat run scripts/maintenance/addValidatorsToUniversalVerifier.ts --network blockdag-testnet
 
-## 5. Troubleshooting
+
+## Install Rarimo's ZK Passport
+
+First configure Hardhat in a similar way as done with iden3:
+
+```ts
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
+
+const config: HardhatUserConfig = {
+  solidity: "0.8.20",
+  networks: {
+    localhost: {
+      url: "http://127.0.0.1:8545",
+      accounts: [privateKey]
+    },
+    amoy: {
+      url: "https://rpc-amoy.polygon.technology/",
+      accounts: [privateKey]
+    },
+    "blockdag-testnet": {
+      chainId: 1043,
+      url: "https://test-rpc.primordial.bdagscan.com/",
+      accounts: [privateKey],
+      gasPrice: 1_000_000_000, // 1 gwei in wei,
+    },
+  }
+};
+
+And then run:
+
+```bash
+npx hardhat migrate --network blockdag-testnet --verify
+```
+  
+## 6. Troubleshooting
 
 ### Replacement Transaction Underpriced
 
