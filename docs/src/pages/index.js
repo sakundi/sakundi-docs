@@ -26,17 +26,21 @@ const HomepageHero = () => {
             >
               <Translate>Technical Documentation</Translate>
             </Link>
+          </div>
+          <div className={styles.buttons}>
             <Link
               className={clsx("button--lg", styles.buttonText)}
               to="https://zikuani.app"
             >
-              <Translate>Zikuani</Translate>
+              Zikuani
             </Link>
+          </div>
+          <div className={styles.buttons}></div>
             <Link
               className={clsx("button--lg", styles.buttonText)}
               to="https://voto.sakundi.io"
             >
-              <Translate>ZK Voto Digital</Translate>
+              ZK Voto Digital
             </Link>
           </div>
         </div>
