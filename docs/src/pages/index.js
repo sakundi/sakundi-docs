@@ -35,7 +35,7 @@ const HomepageHero = () => {
               Zikuani
             </Link>
           </div>
-          <div className={styles.buttons}></div>
+          <div className={styles.buttons}>
             <Link
               className={clsx("button--lg", styles.buttonText)}
               to="https://voto.sakundi.io"
