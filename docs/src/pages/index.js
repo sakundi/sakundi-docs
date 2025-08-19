@@ -16,7 +16,7 @@ const HomepageHero = () => {
           <div className={styles.image}></div>
           <h1 className={styles.subtitle}>
             <Translate>
-              Technical Documentation
+            Security and privacy for the Web3 world
             </Translate>
           </h1>
           <div className={styles.buttons}>
@@ -24,7 +24,19 @@ const HomepageHero = () => {
               className={clsx("button--lg", styles.buttonText)}
               to="/docs/user-section/welcome-to-sakundi"
             >
-              <Translate>Gets started!</Translate>
+              <Translate>Technical Documentation</Translate>
+            </Link>
+            <Link
+              className={clsx("button--lg", styles.buttonText)}
+              to="https://zikuani.app"
+            >
+              <Translate>Zikuani</Translate>
+            </Link>
+            <Link
+              className={clsx("button--lg", styles.buttonText)}
+              to="https://voto.sakundi.io"
+            >
+              <Translate>ZK Voto Digital</Translate>
             </Link>
           </div>
         </div>
