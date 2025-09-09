@@ -24,7 +24,7 @@ custom_edit_url: null
 **Identidad con Zero-Knowledge Proofs (ZK):**
 
 - ✅ Clientes prueban su edad, residencia o nacionalidad **sin enviar fotos**  
-- ✅ Fintech cumple con regulaciones **sin almacenar datos sensibles**  
+- ✅ Fintech y DeFi cumple con regulaciones **sin almacenar datos sensibles**  
 - ✅ Onboarding instantáneo → más conversiones  
 - ✅ Resistente a fraudes con IA (deepfakes no funcionan contra ZK)  
 
@@ -45,7 +45,7 @@ custom_edit_url: null
 ➡️ Respuesta: Las pruebas ZK son atestaciones oficiales emitidas por entidades confiables  
 
 **“Es muy experimental”**  
-➡️ Respuesta: Casos de éxito ya en uso (Polygon ID, Zama, zk-KYC en DeFi)  
+➡️ Respuesta: Casos de éxito ya en uso (Polygon ID, Zama, zk-KYC en DeFi)
 
 **“¿Costará más?”**  
 ➡️ Respuesta: El ROI es claro: menos fraude, menos almacenamiento, menos revisiones  
@@ -55,7 +55,7 @@ custom_edit_url: null
 ## 🌍 Casos de Uso
 
 - 🏦 **Bancos y neobancos**: Onboarding rápido, reducción de riesgos  
-- 📱 **Fintechs de pagos y crédito**: Cumplimiento sin fricción  
+- 📱 **Fintech y DeFis de pagos y crédito**: Cumplimiento sin fricción
 - 🌐 **DeFi y DAOs**: Identidad confiable sin sacrificar privacidad  
 
 ---

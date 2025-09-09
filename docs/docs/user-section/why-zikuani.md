@@ -24,7 +24,7 @@ custom_edit_url: null
 **Identity with Zero-Knowledge Proofs (ZK):**
 
 - ✅ Customers prove age, residency, or nationality **without sharing photos**  
-- ✅ Fintechs remain compliant **without storing sensitive data**
+- ✅ Fintech and DeFis remain compliant **without storing sensitive data**
 - ✅ Instant onboarding → higher conversion rates
 - ✅ Resistant to AI fraud (deepfakes can’t break ZK)
 
@@ -55,7 +55,7 @@ custom_edit_url: null
 ## 🌍 Use Cases
 
 - 🏦 **Banks & Neobanks**: Faster onboarding, reduced regulatory risk  
-- 📱 **Fintech lenders & payment apps**: Seamless compliance  
+- 📱 **Fintech and DeFi lenders & payment apps**: Seamless compliance  
 - 🌐 **DeFi & DAOs**: Trusted identity without sacrificing privacy  
 
 ---
