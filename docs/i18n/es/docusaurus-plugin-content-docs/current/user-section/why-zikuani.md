@@ -8,9 +8,9 @@ hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# Por que necesito Zikuani?
+# Por qué necesito Zikuani?
 
-## 🛑 El Problema del KYC Tradicional otros sistemas de identidad
+## 🛑 El Problema del KYC Tradicional y Otros Sistemas de Identidad
 
 - 📸 Onboarding lento e invasivo (selfie + documentos) → alto abandono  
 - 🕵️ Fraudes: documentos falsos, identidades sintéticas, deepfakes  

@@ -10,7 +10,7 @@ custom_edit_url: null
 
 # Why do I need Zikuani?
 
-## 🛑 The Problem with Traditional KYC and other identity systems
+## 🛑 The Problem with Traditional KYC and Other Identity Systems
 
 - 📸 Onboarding is slow and invasive (selfie + document) → high abandonment  
 - 🕵️ Fraud risk: fake documents, synthetic identities, deepfakes  
