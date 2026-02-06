@@ -1,14 +1,14 @@
 ---
 id: zikuani-architecture
-title: Zikuani Architecture for On-cahin interaction
-sidebar_label: Zikuani Architecture for On-cahin interaction
-description: Zikuani Architecture for On-cahin interaction
+title: Zikuani Architecture
+sidebar_label: Zikuani Architecture
+description: Zikuani Architecture
 keywords: [sakundi, blockchain]
 hide_table_of_contents: true
 custom_edit_url: null
 ---
 
-# 🧩 Zikuani Architecture: ZK Proofs from mDL Verified via Soroban
+# 🧩 Zikuani Architecture:
 
 ## 1. Overview
 
@@ -35,7 +35,7 @@ The objective is to enable secure and compliant identity verification where user
 
 ### Step 1 – mDL Data Extraction
 1. The user opens Zikuani Wallet.  
-2. The app connects to the mDL via **QR or NFC** (ISO/IEC 18013-5 interface).  
+2. The app connects to the mDL via **Deep link, QR or NFC** (ISO/IEC 18013-5 interface).  
 3. The mDL provides:  
    - Signed identity data (e.g., name, date of birth, identity number).  
    - X.509 certificate chain confirming government authority.
@@ -53,7 +53,6 @@ The objective is to enable secure and compliant identity verification where user
    ```rust
    VerifiedIdentities.put(address, true)
    ```
-4. Optionally, a **non-transferable verification token (soulbound)** is issued.
 
 ### Step 5 – Verification by Third Parties
 Other Stellar-based applications or DAOs can query:
