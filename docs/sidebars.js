@@ -13,7 +13,8 @@ const sidebars = {
               "user-section/why-zikuani",
               "user-section/client-installation",
               "user-section/using-zikuani-third-party",
-              "user-section/library-installation"
+              "user-section/library-installation",
+              "user-section/zikuani-architecture"
       ],
     },
     {
