@@ -109,7 +109,7 @@ to confirm identity validity without accessing private details.
 
 ---
 
-## 7. Implementation Stack
+## 7. Implementation Stack for Stellar
 
 | Layer | Tool / Framework |
 |--------|------------------|
