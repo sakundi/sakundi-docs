@@ -28,3 +28,4 @@ jobs:
           publish_dir: docs/build
           user_name: fagomezra
           user_email: fagomezra@users.noreply.github.com
+          deployment-branch: gh-pages
