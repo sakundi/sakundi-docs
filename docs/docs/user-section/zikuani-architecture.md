@@ -34,10 +34,10 @@ The objective is to enable secure and compliant identity verification where user
 ## 3. Data and Process Flow
 
 ### Step 1 – mDL Data Extraction
-1. The user opens Zikuani Wallet.  
-2. The app connects to the mDL via **Deep link, QR or NFC** (ISO/IEC 18013-5 interface).  
-3. The mDL provides:  
-   - Signed identity data (e.g., name, date of birth, identity number).  
+1. The user opens Zikuani Wallet.
+2. The app connects to the mDL via **Deep link, QR or NFC** (ISO/IEC 18013-5 interface).
+3. The mDL provides:
+   - Signed identity data (e.g., name, date of birth, identity number).
    - X.509 certificate chain confirming government authority.
 
 ### Step 2 – Proof Generation (on Device)
@@ -132,7 +132,7 @@ to confirm identity validity without accessing private details.
 
 ## 8. Key Benefits
 
-- **Privacy-preserving:** Only zero-knowledge proofs reach the blockchain.  
-- **Compliant:** Tied to government-issued mDL certificates.  
-- **Efficient:** Soroban’s WASM environment supports ZK verification with low gas cost.  
-- **Interoperable:** dApps and DAOs on Stellar can natively check verification status.  
+- **Privacy-preserving:** Only zero-knowledge proofs reach the blockchain.
+- **Compliant:** Tied to government-issued mDL certificates.
+- **Efficient:** Soroban’s WASM environment supports ZK verification with low gas cost.
+- **Interoperable:** dApps and DAOs on Stellar can natively check verification status.
