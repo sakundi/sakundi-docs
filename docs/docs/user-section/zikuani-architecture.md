@@ -106,7 +106,14 @@ to confirm identity validity without accessing private details.
  │  Query is_verified(address) → boolean  │
  └────────────────────────────────────────┘
 ```
+### C1 — Issuer · Holder · Verifier
+![Zikuani C1](/img/zikuani-c1-final.jpg)
 
+### C2 — Technical Architecture
+![Zikuani C2](/img/zikuani-c2-v6.jpg)
+
+### C4 Level 3 — Soroban Verifier Contract
+![Zikuani C4L3](/img/zikuani-c4-l3-v2.jpg)
 ---
 
 ## 7. Implementation Stack for Stellar
