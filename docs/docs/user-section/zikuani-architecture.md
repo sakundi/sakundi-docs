@@ -116,7 +116,7 @@ to confirm identity validity without accessing private details.
 ![Zikuani C4L3](/img/zikuani-c4-l3-v2.jpg)
 ---
 
-## 7. Implementation Stack for Stellar
+## 7. Implementation Stack
 
 | Layer | Tool / Framework |
 |--------|------------------|
