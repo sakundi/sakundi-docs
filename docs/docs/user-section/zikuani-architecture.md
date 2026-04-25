@@ -107,13 +107,13 @@ to confirm identity validity without accessing private details.
  └────────────────────────────────────────┘
 ```
 ### C1 — Issuer · Holder · Verifier
-![Zikuani C1](/img/zikuani-c1-final.jpg)
+![Zikuani C1](/img/zikuani-c1-hd.png)
 
 ### C2 — Technical Architecture
-![Zikuani C2](/img/zikuani-c2-v6.jpg)
+![Zikuani C2](/img/zikuani-c2-hd.png)
 
-### C4 Level 3 — Soroban Verifier Contract
-![Zikuani C4L3](/img/zikuani-c4-l3-v2.jpg)
+### C3 — Soroban Verifier Contract
+![Zikuani C4L3](/img/zikuani-c3-hd.png)
 ---
 
 ## 7. Implementation Stack
