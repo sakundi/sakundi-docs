@@ -116,17 +116,19 @@ to confirm identity validity without accessing private details.
 ![Zikuani C4L3](/img/zikuani-c3-hd.png)
 ---
 
-## 7. Implementation Stack
+## 7. Technology Stack
 
-| Layer | Tool / Framework |
-|--------|------------------|
-| **Circuit Language** | Circom 2 |
-| **Proof Backend** | snarkjs |
-| **Hash Function** | Poseidon |
-| **Mobile App** | Flutter / React Native + Rust bindings |
-| **ZK Prover** | Rust or WASM binary for mobile / enclave execution |
-| **Smart Contract** | Soroban (Rust, WASM) with embedded ZK verifier |
-| **Data Storage** | Stellar ledger with Merkle root of verified identities |
+| Layer | Technology | Notes |
+|-------|------------|-------|
+| ZK proof system | Groth16 (zk-SNARK) | Constant-size proofs, fast on-chain verification |
+| Elliptic curve | BN254 (alt-bn128) | Native Soroban Protocol 25 host functions |
+| Hash function | Poseidon | ZK-friendly; Protocol 25 native |
+| Circuit language | Circom 2.x | Compiles to R1CS for Groth16 |
+| Smart contract | Rust / Soroban SDK | wasm32v1-none target — contracts/zk_verifier/ |
+| Blockchain | Stellar / Soroban | Protocol 25 (X-Ray) — BN254 + Poseidon as host functions |
+| Mobile application | Android SDK, JavaScript | Identity Wallet |
+| Proof serialization | TypeScript | Groth16 JSON proof → Soroban byte arrays |
+| Identity standard | ISO/IEC 18013-5 (mDL) | International mobile Driver's License — 30+ countries |
 
 ---
 
