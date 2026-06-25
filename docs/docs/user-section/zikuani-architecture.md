@@ -70,7 +70,7 @@ This matters for Zikuani's design in two concrete ways:
 | **ICAO Doc 9303** | e-passport NFC chip data model and signature scheme — what Zikuani's biometric-passport flow (via Rarimo's zk-passport) reads and proves over today. |
 | **ISO/IEC 18013-5 / 18013-7** | mDL data model and NFC/QR/online presentation protocols — a planned credential source, not yet implemented. |
 | **eIDAS 2.0 / ARF (EU 2024/1183)** | EU regulatory target; defines selective disclosure and ZKP as an accepted unlinkability mechanism. |
-| **W3C Verifiable Credentials (VC) Data Model** | Format used by the `verifiable_credential` returned to third-party integrators (see [Using Zikuani as a provider](./using-zikuani-third-party.md)). |
+| **W3C Verifiable Credentials (VC) Data Model** | Format used by the `verifiable_credential` returned to third-party integrators (see "Using Zikuani as a provider"). |
 
 ---
 
