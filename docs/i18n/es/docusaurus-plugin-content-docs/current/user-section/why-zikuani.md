@@ -30,6 +30,14 @@ custom_edit_url: null
 
 ---
 
+## 🪪 Credenciales Soportadas Hoy
+
+- ✅ **Pasaportes biométricos** (chip NFC, ICAO 9303) — disponible hoy
+- ✅ **Firmas digitales gubernamentales** (p. ej. la Firma Digital de Costa Rica) — disponible hoy
+- 🛣️ **Licencia de conducir móvil (mDL, ISO/IEC 18013-5)** — próximo en el roadmap
+
+---
+
 ## 📊 Beneficios Tangibles
 
 - 📉 **Reducción de abandono**: hasta -50% en onboarding  

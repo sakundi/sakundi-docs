@@ -43,12 +43,17 @@ a secret key that belongs to a public key pair without actually sharing the secr
 
 ZK allows the user to create a mathematical proof of having some information
 that can be validated by a third party called the verifier. In our use case, we
-extract the digital certificate from the identity card locally on the user's device
-and create an anonymous proof of such certificate. Hence, the user can prove that
-she has an identity validated (signed) by the government without actually sending the
-certificate and the sensitive informatin contained there. On the other hand,
+extract the signed identity data locally on the user's device — today, either
+from a biometric passport's NFC chip (ICAO 9303) or from a government digital
+signature credential such as Costa Rica's Firma Digital — and create an
+anonymous proof of it. Hence, the user can prove that she has an identity
+validated (signed) by the government without actually sending the document
+and the sensitive information contained there. On the other hand,
 depending on the use case the service provider can ask the user to reveal specific
-information from the certificate that the person has to accept and confirm.
+information from the credential that the person has to accept and confirm.
+
+Support for the mobile driver's license standard (mDL, ISO/IEC 18013-5) is
+planned as a third credential source.
 
 # Potential Use Cases
 

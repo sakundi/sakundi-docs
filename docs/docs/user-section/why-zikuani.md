@@ -30,6 +30,14 @@ custom_edit_url: null
 
 ---
 
+## 🪪 Supported Credentials Today
+
+- ✅ **Biometric passports** (NFC chip, ICAO 9303) — live today
+- ✅ **Government digital signatures** (e.g. Costa Rica's Firma Digital) — live today
+- 🛣️ **Mobile driver's licenses (mDL, ISO/IEC 18013-5)** — next on the roadmap
+
+---
+
 ## 📊 Tangible Benefits
 
 - 📉 **Lower abandonment**: up to -50% in onboarding  
